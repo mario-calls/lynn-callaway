@@ -3,31 +3,31 @@ import Image from "next/image";
 export default function Hero() {
   return (
     <section className="relative min-h-[100svh] bg-[#E7EFDA] overflow-hidden">
-      {/* Photo — animates in on load */}
+      {/* Full-bleed photo — object-right-top keeps Lynn visible on all viewports */}
       <div className="absolute inset-0 hero-photo-enter">
         <Image
           src="/images/lynn-hero.jpg"
           alt="Lynn Callaway"
           fill
           priority
-          className="object-cover object-[center_top]"
+          className="object-cover object-right-top"
           sizes="100vw"
         />
-        {/* Mobile: fade bottom for text readability */}
-        <div className="absolute inset-0 bg-gradient-to-t from-[#E7EFDA] from-[20%] via-[#E7EFDA]/70 via-[45%] to-transparent to-[65%] md:hidden" />
-        {/* Desktop: subtle left fade so text sits cleanly */}
-        <div className="hidden md:block absolute inset-0 bg-gradient-to-r from-[#E7EFDA]/80 via-[#E7EFDA]/30 to-transparent" style={{ width: "55%" }} />
+        {/* Left-side gradient so text stays readable — works on all screen sizes */}
+        <div className="absolute inset-0 bg-gradient-to-r from-[#E7EFDA] via-[#E7EFDA]/60 to-transparent" style={{ width: "65%" }} />
+        {/* Subtle bottom fade on mobile for extra legibility */}
+        <div className="absolute inset-0 bg-gradient-to-t from-[#E7EFDA]/40 via-transparent to-transparent md:hidden" />
       </div>
 
-      {/* Text */}
-      <div className="relative z-10 w-full max-w-6xl mx-auto px-6 lg:px-12 flex flex-col justify-end md:justify-center min-h-[100svh]">
-        <div className="max-w-xl pb-12 sm:pb-16 md:pt-24 md:pb-20">
+      {/* Text — vertically centered on all screen sizes */}
+      <div className="relative z-10 w-full max-w-6xl mx-auto px-6 lg:px-12 flex flex-col justify-center min-h-[100svh]">
+        <div className="max-w-xl pt-24 pb-12">
           <h1
             className="fade-up text-[#555555] leading-[1.05] mb-8"
             style={{
               fontFamily: "var(--font-raleway)",
               fontWeight: 800,
-              fontSize: "clamp(2.2rem, 5.5vw, 4.5rem)",
+              fontSize: "clamp(2rem, 5.5vw, 4.5rem)",
             }}
           >
             Organizer. Founder. Strategist. Helping brands built to do good.
