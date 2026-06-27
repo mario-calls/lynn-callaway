@@ -31,7 +31,7 @@ const projects = [
     title: "Meta",
     logo: "/images/logos/meta-logo.svg",
     description:
-      "I worked in Advertising Operations at Meta, supporting small and mid-sized businesses in building paid social strategies that expanded their reach. I collaborated across creative, analytics, and data science teams to test new ad products and troubleshoot features that improved performance for advertisers. This role sharpened my ability to translate complex ad platform mechanics into measurable growth for underrepresented and early-stage brands.",
+      "I worked in Advertising Operations at Meta, supporting small and mid-sized businesses in building paid social strategies that expanded their reach. I collaborated across creative, analytics, and data science teams to test new ad products and troubleshoot features that improved performance for advertisers.",
     tags: ["Social Media", "Strategy", "Community"],
     featured: false,
   },
