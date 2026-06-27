@@ -3,7 +3,7 @@ import Reveal from "@/components/Reveal";
 
 export default function About() {
   return (
-    <section id="about" className="py-16 md:py-28 lg:py-36 bg-[#F9F7F4]">
+    <section id="about" className="pt-16 pb-8 md:pt-28 md:pb-14 lg:pt-36 lg:pb-20 bg-[#F9F7F4]">
       <div className="max-w-6xl mx-auto px-6 lg:px-12">
         <div className="grid md:grid-cols-2 gap-10 lg:gap-24 items-center">
 
@@ -33,7 +33,7 @@ export default function About() {
                 About Lynn
               </span>
               <h2
-                className="text-[#3D3D3D] mb-6 leading-tight"
+                className="text-[#555555] mb-6 leading-tight"
                 style={{
                   fontFamily: "var(--font-raleway)",
                   fontWeight: 800,

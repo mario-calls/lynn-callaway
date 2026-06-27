@@ -18,7 +18,7 @@ export default function Contact() {
             Let&apos;s Work Together
           </span>
           <h2
-            className="text-[#3D3D3D] mb-5 leading-tight"
+            className="text-[#555555] mb-5 leading-tight"
             style={{
               fontFamily: "var(--font-raleway)",
               fontWeight: 800,

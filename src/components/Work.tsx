@@ -72,7 +72,7 @@ export default function Work() {
           <div className="flex flex-col md:flex-row md:items-end md:justify-between mb-10 md:mb-16 gap-4">
             <div>
               <h2
-                className="text-[#3D3D3D] leading-tight"
+                className="text-[#555555] leading-tight"
                 style={{
                   fontFamily: "var(--font-raleway)",
                   fontWeight: 800,
@@ -82,9 +82,6 @@ export default function Work() {
                 Recent Work
               </h2>
             </div>
-            <p className="text-[#6B6B6B] md:max-w-xs text-sm leading-relaxed">
-              From startup to enterprise, turning good values into measurable brand growth.
-            </p>
           </div>
         </Reveal>
 
@@ -159,7 +156,7 @@ export default function Work() {
                     {project.label}
                   </span>
                   <h3
-                    className="text-lg md:text-xl text-[#3D3D3D] mb-2"
+                    className="text-lg md:text-xl text-[#555555] mb-2"
                     style={{ fontFamily: "var(--font-raleway)", fontWeight: 700 }}
                   >
                     {project.title}

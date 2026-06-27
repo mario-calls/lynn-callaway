@@ -11,7 +11,7 @@ const brands = [
 
 export default function Brands() {
   return (
-    <section className="bg-white border-y border-[#E5E2DC] pt-16 pb-12 md:pt-16 md:pb-12">
+    <section className="bg-white border-y border-[#E5E2DC] pt-12 pb-14 md:pt-14 md:pb-16">
       <div className="max-w-6xl mx-auto px-6 lg:px-12">
         <Reveal direction="fade">
           <p className="text-center text-xs tracking-[0.2em] uppercase text-[#6B6B6B] mb-8 md:hidden">
@@ -61,7 +61,7 @@ export default function Brands() {
         {/* Positioning statement */}
         <Reveal direction="up" delay={150}>
           <p
-            className="text-center text-[#3D3D3D] max-w-3xl mx-auto mt-14 md:mt-16 leading-snug"
+            className="text-center text-[#555555] max-w-3xl mx-auto mt-14 md:mt-16 leading-snug"
             style={{
               fontFamily: "var(--font-raleway)",
               fontWeight: 700,

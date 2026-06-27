@@ -7,7 +7,7 @@ const FORM_ENDPOINT = "https://api.web3forms.com/submit";
 type Status = "idle" | "submitting" | "success" | "error";
 
 const inputClass =
-  "w-full border border-[#E5E2DC] rounded-lg px-4 py-3 text-sm text-[#3D3D3D] bg-white focus:outline-none focus:border-[#2C5F4A] focus:ring-1 focus:ring-[#2C5F4A] transition-colors placeholder:text-[#ABABAB]";
+  "w-full border border-[#E5E2DC] rounded-lg px-4 py-3 text-sm text-[#555555] bg-white focus:outline-none focus:border-[#2C5F4A] focus:ring-1 focus:ring-[#2C5F4A] transition-colors placeholder:text-[#ABABAB]";
 
 export default function Press() {
   const [status, setStatus] = useState<Status>("idle");
@@ -42,7 +42,7 @@ export default function Press() {
               Press
             </span>
             <h2
-              className="text-[#3D3D3D] leading-tight mb-5"
+              className="text-[#555555] leading-tight mb-5"
               style={{
                 fontFamily: "var(--font-raleway)",
                 fontWeight: 800,

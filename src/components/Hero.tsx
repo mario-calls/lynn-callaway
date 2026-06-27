@@ -3,8 +3,8 @@ import Image from "next/image";
 export default function Hero() {
   return (
     <section className="relative min-h-[100svh] bg-[#E7EFDA] overflow-hidden">
-      {/* Full-bleed background image — already composed with Lynn on right */}
-      <div className="absolute inset-0">
+      {/* Photo — animates in on load */}
+      <div className="absolute inset-0 hero-photo-enter">
         <Image
           src="/images/lynn-hero.jpg"
           alt="Lynn Callaway"
@@ -23,7 +23,7 @@ export default function Hero() {
       <div className="relative z-10 w-full max-w-6xl mx-auto px-6 lg:px-12 flex flex-col justify-end md:justify-center min-h-[100svh]">
         <div className="max-w-xl pb-12 sm:pb-16 md:pt-24 md:pb-20">
           <h1
-            className="fade-up text-[#3D3D3D] leading-[1.05] mb-8"
+            className="fade-up text-[#555555] leading-[1.05] mb-8"
             style={{
               fontFamily: "var(--font-raleway)",
               fontWeight: 800,

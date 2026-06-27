@@ -7,7 +7,7 @@
   --color-green-light: #3D7A60;
   --color-gold: #B8963E;
   --color-cream: #F9F7F4;
-  --color-charcoal: #1A1A1A;
+  --color-charcoal: #555555;
   --color-muted: #6B6B6B;
   --color-border: #E5E2DC;
 }
@@ -18,8 +18,8 @@ html {
 
 body {
   position: relative;
-  background-color: #E7EFDA; /* matches hero + contact bg */
-  color: #3D3D3D;
+  background-color: #E7EFDA;
+  color: #555555;
   font-family: var(--font-raleway), sans-serif;
   -webkit-font-smoothing: antialiased;
 }
@@ -50,3 +50,11 @@ body {
   animation: fadeIn 1s ease forwards;
 }
 
+/* Hero photo entrance — fade in + gentle scale from slightly zoomed */
+@keyframes heroPhotoEnter {
+  from { opacity: 0; transform: scale(1.04); }
+  to   { opacity: 1; transform: scale(1); }
+}
+.hero-photo-enter {
+  animation: heroPhotoEnter 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+}
