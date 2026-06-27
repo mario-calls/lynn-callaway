@@ -4,7 +4,7 @@ export default function Footer() {
       <div className="max-w-6xl mx-auto px-6 lg:px-12 flex flex-col md:flex-row items-center justify-between gap-3 md:gap-4 text-center md:text-left">
         <span
           className="text-white/90"
-          style={{ fontFamily: "var(--font-raleway)", fontSize: "1rem", fontWeight: 700, letterSpacing: "0.05em" }}
+          style={{ fontFamily: "var(--font-raleway)", fontSize: "1rem", fontWeight: 800, letterSpacing: "0.05em" }}
         >
           Lynn Callaway
         </span>

@@ -17,8 +17,8 @@ export default function Nav() {
       <div className="max-w-6xl mx-auto px-6 lg:px-12 flex items-center justify-between py-6">
         <Link
           href="/"
-          className="text-2xl tracking-wide text-white hover:text-white/70 transition-colors"
-          style={{ fontFamily: "var(--font-raleway)", fontWeight: 800 }}
+          className="text-2xl text-white hover:text-white/70 transition-colors"
+          style={{ fontFamily: "var(--font-raleway)", fontWeight: 800, letterSpacing: "0.05em" }}
         >
           Lynn Callaway
         </Link>
