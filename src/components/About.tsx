@@ -15,7 +15,7 @@ export default function About() {
                   src="/images/bio-photo.jpg"
                   alt="Lynn Callaway"
                   fill
-                  className="object-cover object-top"
+                  className="object-cover object-[center_20%]"
                   sizes="(max-width: 768px) 100vw, 50vw"
                 />
               </div>
