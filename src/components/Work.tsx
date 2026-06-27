@@ -40,9 +40,10 @@ const projects = [
     type: "image",
     label: "Marketing & Outreach",
     title: "City of Austin",
-    logo: "/images/logos/austin-logo.jpeg",
+    logo: "/images/coa.heic",
+    coverLogo: true,
     description:
-      "Led outreach and marketing for customer assistance programs, reaching 35,000+ low-income households through targeted multi-channel campaigns.",
+      "I managed outreach for the City of Austin's customer assistance programs, connecting vulnerable populations to vital resources. I built a community referral network from the ground up, reaching 35,000+ households across the city. This role deepened my commitment to translating public sector work into measurable, on-the-ground impact.",
     tags: ["Public Sector", "Community Outreach", "Multicultural Marketing"],
     featured: false,
   },
