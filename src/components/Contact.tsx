@@ -30,20 +30,12 @@ export default function Contact() {
           I partner with brands whose missions I believe in. Let&apos;s see if we&apos;re a fit.
         </p>
 
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+        <div className="flex justify-center">
           <a
             href="mailto:hello@lynncallaway.com"
             className="text-xs tracking-widest uppercase bg-white text-[#2C5F4A] px-8 py-4 hover:bg-[#B8963E] hover:text-white transition-colors font-medium"
           >
             hello@lynncallaway.com
-          </a>
-          <a
-            href="https://www.linkedin.com/in/lynn-callaway"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-xs tracking-widest uppercase border border-white text-white px-8 py-4 hover:bg-white hover:text-[#2C5F4A] transition-colors"
-          >
-            Connect on LinkedIn
           </a>
         </div>
 
