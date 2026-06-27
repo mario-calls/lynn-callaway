@@ -3,7 +3,7 @@ import Reveal from "@/components/Reveal";
 
 export default function About() {
   return (
-    <section id="about" className="py-16 md:py-28 lg:py-36 bg-[#F9F7F4]">
+    <section id="about" className="py-16 md:py-28 lg:py-36 bg-[#E7EFDA]">
       <div className="max-w-6xl mx-auto px-6 lg:px-12">
         <div className="grid md:grid-cols-2 gap-10 lg:gap-24 items-center">
 

@@ -45,6 +45,17 @@ const projects = [
     tags: ["Public Sector", "Community Outreach", "Multicultural Marketing"],
     featured: false,
   },
+  {
+    id: "faraway",
+    type: "image",
+    label: "Founder",
+    title: "Faraway",
+    logo: null,
+    description:
+      "Founded and built Faraway, a postcard exchange community that connects people across the globe through the timeless art of handwritten mail.",
+    tags: ["Community Building", "Brand Development", "Founder"],
+    featured: false,
+  },
 ];
 
 export default function Work() {
@@ -70,7 +81,7 @@ export default function Work() {
                   fontSize: "clamp(1.9rem, 4vw, 3.25rem)",
                 }}
               >
-                Brands I&apos;ve Built &amp; Grown
+                Recent Work
               </h2>
             </div>
             <p className="text-[#6B6B6B] md:max-w-xs text-sm leading-relaxed">
@@ -103,9 +114,9 @@ export default function Work() {
                   </span>
                   <div className="mb-4">
                     <Image
-                      src="/images/good-dirt-logo.jpg"
+                      src="/images/good-dirt-logo.png"
                       alt="good dirt®"
-                      width={200}
+                      width={220}
                       height={72}
                       className="object-contain"
                     />
@@ -131,17 +142,26 @@ export default function Work() {
         )}
 
         {/* Other projects */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 md:gap-6">
           {rest.map((project, i) => (
             <Reveal key={project.id} direction="up" delay={i * 100}>
               <div className="border border-[#E5E2DC] overflow-hidden group hover:-translate-y-1 transition-transform duration-300 bg-[#F9F7F4] rounded-2xl h-full">
                 <div className="h-36 md:h-40 relative overflow-hidden bg-white flex items-center justify-center px-8">
-                  <Image
-                    src={project.logo!}
-                    alt={project.title}
-                    fill
-                    className="object-contain p-6"
-                  />
+                  {project.logo ? (
+                    <Image
+                      src={project.logo}
+                      alt={project.title}
+                      fill
+                      className="object-contain p-6"
+                    />
+                  ) : (
+                    <span
+                      className="text-3xl md:text-4xl tracking-widest text-[#2C5F4A]"
+                      style={{ fontFamily: "var(--font-raleway)", fontWeight: 800, letterSpacing: "0.12em" }}
+                    >
+                      FARAWAY
+                    </span>
+                  )}
                 </div>
                 <div className="p-5 md:p-6">
                   <span className="text-[10px] tracking-[0.2em] uppercase text-[#B8963E] font-medium mb-2 block">

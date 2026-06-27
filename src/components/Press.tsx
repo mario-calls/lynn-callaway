@@ -33,7 +33,7 @@ export default function Press() {
   };
 
   return (
-    <section id="press" className="py-16 md:py-28 lg:py-36 bg-[#F9F7F4]">
+    <section id="press" className="py-16 md:py-28 lg:py-36 bg-[#E7EFDA]">
       <div className="max-w-4xl mx-auto px-6 lg:px-12">
 
         <Reveal direction="up">
