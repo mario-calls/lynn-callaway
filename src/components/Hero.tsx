@@ -33,13 +33,13 @@ export default function Hero() {
           <div className="fade-up delay-2 flex flex-col sm:flex-row gap-4">
             <a
               href="#about"
-              className="text-xs tracking-widest uppercase bg-white text-[#2C5F4A] px-7 py-4 hover:bg-[#B8963E] hover:text-white transition-colors text-center font-semibold"
+              className="text-xs tracking-widest uppercase bg-white text-[#2C5F4A] px-7 py-4 hover:bg-[#B8963E] hover:text-white transition-colors text-center font-semibold rounded-lg"
             >
               Learn More
             </a>
             <a
               href="#contact"
-              className="text-xs tracking-widest uppercase border border-white text-white px-7 py-4 hover:bg-white hover:text-[#2C5F4A] transition-colors text-center"
+              className="text-xs tracking-widest uppercase border border-white text-white px-7 py-4 hover:bg-white hover:text-[#2C5F4A] transition-colors text-center rounded-lg"
             >
               Get In Touch
             </a>

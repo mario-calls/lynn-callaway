@@ -71,7 +71,7 @@ export default function Work() {
 
         {/* Featured project: good dirt with video */}
         {featured && (
-          <div className="mb-12 border border-[#E5E2DC] overflow-hidden group hover:-translate-y-1 transition-transform duration-300 bg-[#F9F7F4]">
+          <div className="mb-12 border border-[#E5E2DC] overflow-hidden group hover:-translate-y-1 transition-transform duration-300 bg-[#F9F7F4] rounded-2xl">
             <div className="grid md:grid-cols-2">
               {/* Video */}
               <div className="relative aspect-video md:aspect-auto md:min-h-[420px] overflow-hidden bg-[#2C5F4A]">
@@ -107,7 +107,7 @@ export default function Work() {
                   {featured.tags.map((tag) => (
                     <span
                       key={tag}
-                      className="text-[10px] tracking-widest uppercase border border-[#2C5F4A] text-[#2C5F4A] px-3 py-1"
+                      className="text-[10px] tracking-widest uppercase border border-[#2C5F4A] text-[#2C5F4A] px-3 py-1 rounded-full"
                     >
                       {tag}
                     </span>
@@ -123,7 +123,7 @@ export default function Work() {
           {rest.map((project) => (
             <div
               key={project.id}
-              className="border border-[#E5E2DC] overflow-hidden group hover:-translate-y-1 transition-transform duration-300 bg-[#F9F7F4]"
+              className="border border-[#E5E2DC] overflow-hidden group hover:-translate-y-1 transition-transform duration-300 bg-[#F9F7F4] rounded-2xl"
             >
               {/* Placeholder colored header */}
               <div
@@ -159,7 +159,7 @@ export default function Work() {
                   {project.tags.map((tag) => (
                     <span
                       key={tag}
-                      className="text-[9px] tracking-wider uppercase bg-[#E5E2DC] text-[#4A4A4A] px-2 py-0.5"
+                      className="text-[9px] tracking-wider uppercase bg-[#E5E2DC] text-[#4A4A4A] px-2 py-0.5 rounded-full"
                     >
                       {tag}
                     </span>

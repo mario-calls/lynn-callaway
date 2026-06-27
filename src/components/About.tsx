@@ -61,13 +61,13 @@ export default function About() {
             <div className="mt-10 flex flex-col sm:flex-row gap-4">
               <a
                 href="#contact"
-                className="text-xs tracking-widest uppercase bg-[#2C5F4A] text-white px-7 py-4 hover:bg-[#3D7A60] transition-colors text-center"
+                className="text-xs tracking-widest uppercase bg-[#2C5F4A] text-white px-7 py-4 hover:bg-[#3D7A60] transition-colors text-center rounded-lg"
               >
                 Work With Me
               </a>
               <a
                 href="#work"
-                className="text-xs tracking-widest uppercase border border-[#2C5F4A] text-[#2C5F4A] px-7 py-4 hover:bg-[#2C5F4A] hover:text-white transition-colors text-center"
+                className="text-xs tracking-widest uppercase border border-[#2C5F4A] text-[#2C5F4A] px-7 py-4 hover:bg-[#2C5F4A] hover:text-white transition-colors text-center rounded-lg"
               >
                 See Projects
               </a>
