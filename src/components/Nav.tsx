@@ -18,7 +18,7 @@ export default function Nav() {
       <div className="max-w-6xl mx-auto px-6 lg:px-12 flex items-center justify-between py-6">
         <Link
           href="/"
-          className="text-[1.75rem] md:text-[2rem] text-[#555555] hover:text-[#2C5F4A] transition-colors"
+          className="text-[1.75rem] md:text-[2rem] text-[#532D3A] hover:text-[#3D2029] transition-colors"
           style={{ fontFamily: "var(--font-raleway)", fontWeight: 800, letterSpacing: "0.05em" }}
         >
           Lynn Callaway
