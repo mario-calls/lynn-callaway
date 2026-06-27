@@ -9,7 +9,7 @@ export default function Hero() {
           alt="Lynn Callaway"
           fill
           priority
-          className="object-cover object-[80%_top] md:object-[center_top]"
+          className="object-cover object-[84%_top] md:object-[center_top]"
           sizes="100vw"
         />
       </div>
