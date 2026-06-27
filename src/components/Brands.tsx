@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Reveal from "@/components/Reveal";
 
+
 const brands = [
   { name: "West Elm", logo: "/images/logos/west-elm.svg", width: 120 },
   { name: "Sprouts", logo: "/images/logos/sprouts.svg", width: 120 },
@@ -56,6 +57,20 @@ export default function Brands() {
             </Reveal>
           ))}
         </div>
+
+        {/* Positioning statement */}
+        <Reveal direction="up" delay={150}>
+          <p
+            className="text-center text-[#3D3D3D] max-w-3xl mx-auto mt-14 md:mt-16 leading-snug"
+            style={{
+              fontFamily: "var(--font-raleway)",
+              fontWeight: 700,
+              fontSize: "clamp(1.25rem, 2.5vw, 1.75rem)",
+            }}
+          >
+            I&apos;m an entrepreneur and marketing strategist who builds growth for social impact brands and community-rooted businesses, drawing on 15+ years of work that spans grassroots organizing, program building, corporate marketing, and building mission-driven companies from the ground up.
+          </p>
+        </Reveal>
       </div>
     </section>
   );

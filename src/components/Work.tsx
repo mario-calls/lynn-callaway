@@ -75,7 +75,7 @@ export default function Work() {
                 Selected Work
               </span>
               <h2
-                className="text-[#1A1A1A] leading-tight"
+                className="text-[#3D3D3D] leading-tight"
                 style={{
                   fontFamily: "var(--font-raleway)",
                   fontWeight: 800,
@@ -162,7 +162,7 @@ export default function Work() {
                     {project.label}
                   </span>
                   <h3
-                    className="text-lg md:text-xl text-[#1A1A1A] mb-2"
+                    className="text-lg md:text-xl text-[#3D3D3D] mb-2"
                     style={{ fontFamily: "var(--font-raleway)", fontWeight: 700 }}
                   >
                     {project.title}

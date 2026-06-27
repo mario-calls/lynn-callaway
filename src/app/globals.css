@@ -19,7 +19,7 @@ html {
 body {
   position: relative;
   background-color: #E7EFDA; /* matches hero + contact bg */
-  color: #1A1A1A;
+  color: #3D3D3D;
   font-family: var(--font-raleway), sans-serif;
   -webkit-font-smoothing: antialiased;
 }

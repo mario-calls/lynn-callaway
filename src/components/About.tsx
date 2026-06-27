@@ -15,7 +15,7 @@ export default function About() {
                   src="/images/bio-photo.jpg"
                   alt="Lynn Callaway"
                   fill
-                  className="object-cover object-[center_20%]"
+                  className="object-cover object-top"
                   sizes="(max-width: 768px) 100vw, 50vw"
                 />
               </div>
@@ -33,7 +33,7 @@ export default function About() {
                 About Lynn
               </span>
               <h2
-                className="text-[#1A1A1A] mb-6 leading-tight"
+                className="text-[#3D3D3D] mb-6 leading-tight"
                 style={{
                   fontFamily: "var(--font-raleway)",
                   fontWeight: 800,
