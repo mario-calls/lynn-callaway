@@ -13,8 +13,8 @@ export default function Hero() {
           className="object-cover object-[center_top]"
           sizes="(max-width: 768px) 100vw, 52vw"
         />
-        {/* Mobile: strong bottom gradient so face shows, text readable */}
-        <div className="absolute inset-0 bg-gradient-to-t from-[#2C5F4A] from-[30%] via-[#2C5F4A]/50 via-[55%] to-transparent md:hidden" />
+        {/* Mobile: gradient only covers the bottom ~40% so face stays fully visible */}
+        <div className="absolute inset-0 bg-gradient-to-t from-[#2C5F4A] from-[15%] via-[#2C5F4A]/60 via-[38%] to-transparent to-[55%] md:hidden" />
         {/* Desktop: left-side gradient */}
         <div className="hidden md:block absolute inset-0 bg-gradient-to-r from-[#2C5F4A] via-[#2C5F4A]/20 to-transparent" style={{ width: "40%" }} />
       </div>
