@@ -39,7 +39,7 @@ export default function Contact() {
           <div className="flex justify-center">
             <a
               href="mailto:hello@lynncallaway.co"
-              className="text-[10px] sm:text-xs tracking-widest uppercase bg-[#2C5F4A] text-white px-6 sm:px-8 py-4 hover:bg-[#B8963E] transition-colors font-medium rounded-lg"
+              className="text-[10px] sm:text-xs tracking-widest uppercase bg-[#532D3A] text-white px-6 sm:px-8 py-4 hover:bg-[#B8963E] transition-colors font-medium rounded-lg"
             >
               hello@lynncallaway.co
             </a>

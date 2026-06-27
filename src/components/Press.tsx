@@ -187,7 +187,7 @@ export default function Press() {
               <button
                 type="submit"
                 disabled={status === "submitting"}
-                className="w-full sm:w-auto text-xs tracking-widest uppercase bg-[#2C5F4A] text-white px-8 py-4 hover:bg-[#3D7A60] disabled:opacity-60 disabled:cursor-not-allowed transition-colors font-medium rounded-lg"
+                className="w-full sm:w-auto text-xs tracking-widest uppercase bg-[#532D3A] text-white px-8 py-4 hover:bg-[#3D2029] disabled:opacity-60 disabled:cursor-not-allowed transition-colors font-medium rounded-lg"
               >
                 {status === "submitting" ? "Sending..." : "Submit Inquiry"}
               </button>

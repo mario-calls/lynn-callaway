@@ -38,7 +38,7 @@ export default function Nav() {
           ))}
           <a
             href="#contact"
-            className="text-xs tracking-widest uppercase px-5 py-2.5 rounded-lg font-medium bg-[#2C5F4A] text-white hover:bg-[#3D7A60] transition-colors"
+            className="text-xs tracking-widest uppercase px-5 py-2.5 rounded-lg font-medium bg-[#532D3A] text-white hover:bg-[#3D2029] transition-colors"
           >
             Let&apos;s Talk
           </a>
@@ -76,7 +76,7 @@ export default function Nav() {
           <a
             href="#contact"
             onClick={() => setMenuOpen(false)}
-            className="text-xs tracking-widest uppercase bg-[#2C5F4A] text-white px-5 py-3 text-center hover:bg-[#3D7A60] transition-colors rounded-lg"
+            className="text-xs tracking-widest uppercase bg-[#532D3A] text-white px-5 py-3 text-center hover:bg-[#3D2029] transition-colors rounded-lg"
           >
             Let&apos;s Talk
           </a>
