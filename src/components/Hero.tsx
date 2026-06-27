@@ -25,7 +25,7 @@ export default function Hero() {
             style={{
               fontFamily: "var(--font-raleway)",
               fontWeight: 800,
-              fontSize: "clamp(3.5rem, 7.5vw, 6.5rem)",
+              fontSize: "clamp(2.5rem, 4.8vw, 4.5rem)",
             }}
           >
             Organizer. Founder. Strategist. Helping brands built to do good.
