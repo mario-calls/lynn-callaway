@@ -28,7 +28,7 @@ export default function Hero() {
               fontSize: "clamp(3.5rem, 7.5vw, 6.5rem)",
             }}
           >
-            I help brands with good <em>ethos</em> do better.
+            Organizer. Founder. Strategist. Helping brands built to do good.
           </h1>
           <div className="fade-up delay-2 flex flex-col sm:flex-row gap-4">
             <a
