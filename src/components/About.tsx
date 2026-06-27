@@ -46,7 +46,7 @@ export default function About() {
 
               <div className="space-y-4 text-[#4A4A4A] text-sm sm:text-base leading-relaxed">
                 <p>
-                  I&apos;m a marketing and partnerships professional with 15+ years spanning grassroots organizing,
+                  I&apos;m a marketing and partnerships professional spanning grassroots organizing,
                   tech, social enterprise, and the public sector. I got my start building community spaces and
                   raising sustainability awareness at B.E.A.N. Inc., and dedicated 1,700 hours as an AmeriCorps
                   alum serving low-income communities in Syracuse, NY.
@@ -94,20 +94,13 @@ export default function About() {
 
         {/* Stats row */}
         <div className="mt-12 md:mt-16 grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 pt-8 md:pt-10 border-t border-[#E5E2DC]">
-          {/* Experience blurb — spans 2 cols */}
-          <Reveal direction="up" delay={0}>
-            <div className="col-span-2 md:col-span-2">
-              <div className="text-[10px] md:text-xs tracking-widest uppercase text-[#6B6B6B] mb-2">Experience</div>
-              <p className="text-[#555555] text-sm leading-relaxed">
-                I&apos;m a marketing and partnerships professional with 15+ years spanning grassroots organizing.
-              </p>
-            </div>
-          </Reveal>
           {[
+            { number: "15+", label: "Years of Experience" },
             { number: "35K+", label: "Households Reached" },
             { number: "1,700", label: "AmeriCorps Hours" },
+            { number: "Magna Cum Laude", label: "FIT Graduate" },
           ].map((stat, i) => (
-            <Reveal key={stat.label} direction="up" delay={(i + 1) * 80}>
+            <Reveal key={stat.label} direction="up" delay={i * 80}>
               <div className="text-center md:text-left">
                 <div
                   className="text-2xl md:text-4xl text-[#2C5F4A] mb-2 leading-tight"
