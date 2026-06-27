@@ -137,9 +137,7 @@ export default function Work() {
                   src={project.logo!}
                   alt={project.title}
                   fill
-                  className={`object-contain p-6 ${
-                    project.id === "facebook" ? "object-top scale-[1.15]" : ""
-                  }`}
+                  className="object-contain p-6"
                 />
               </div>
               <div className="p-5 md:p-6">
