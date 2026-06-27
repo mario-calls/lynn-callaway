@@ -80,8 +80,8 @@ export default function Nav() {
 
       {/* Mobile menu */}
       <div
-        className={`md:hidden bg-[#F9F7F4] border-t border-[#E5E2DC] overflow-hidden transition-all duration-300 ${
-          menuOpen ? "max-h-64 py-6" : "max-h-0"
+        className={`md:hidden bg-[#F9F7F4] overflow-hidden transition-all duration-300 ${
+          menuOpen ? "max-h-64 py-6 border-t border-[#E5E2DC]" : "max-h-0"
         }`}
       >
         <nav className="flex flex-col gap-4 px-6">
