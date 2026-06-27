@@ -6,22 +6,38 @@ import Link from "next/link";
 export default function Nav() {
   const [visible, setVisible] = useState(true);
   const [atTop, setAtTop] = useState(true);
+  const [scrolledBack, setScrolledBack] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const lastY = useRef(0);
+  const wasHidden = useRef(false);
 
   useEffect(() => {
     const onScroll = () => {
       const y = window.scrollY;
-      setAtTop(y < 40);
-      if (y < 40) {
+      const isAtTop = y < 40;
+
+      setAtTop(isAtTop);
+
+      if (isAtTop) {
         setVisible(true);
+        setScrolledBack(false);
+        wasHidden.current = false;
       } else if (y > lastY.current + 8) {
+        // Scrolling down — hide but keep transparent, no color change
         setVisible(false);
+        wasHidden.current = true;
       } else if (y < lastY.current - 8) {
+        // Scrolling back up — only show solid bg when re-emerging from hidden state
         setVisible(true);
+        if (wasHidden.current) {
+          setScrolledBack(true);
+          wasHidden.current = false;
+        }
       }
+
       lastY.current = y;
     };
+
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
@@ -32,18 +48,18 @@ export default function Nav() {
     { label: "Contact", href: "#contact" },
   ];
 
-  const textColor = atTop ? "text-white" : "text-[#1A1A1A]";
-  const hoverColor = atTop ? "hover:text-white/70" : "hover:text-[#2C5F4A]";
-  const underlineColor = atTop ? "bg-white" : "bg-[#2C5F4A]";
+  // Solid bg only when scrolled back up mid-page — never during initial downward scroll
+  const showSolid = scrolledBack && !atTop;
+  const textColor = showSolid ? "text-[#1A1A1A]" : "text-white";
+  const hoverColor = showSolid ? "hover:text-[#2C5F4A]" : "hover:text-white/70";
+  const underlineColor = showSolid ? "bg-[#2C5F4A]" : "bg-white";
 
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         visible ? "translate-y-0" : "-translate-y-full"
       } ${
-        atTop
-          ? "bg-transparent"
-          : "bg-[#F9F7F4]/96 backdrop-blur-sm shadow-sm"
+        showSolid ? "bg-[#F9F7F4]/96 backdrop-blur-sm shadow-sm" : "bg-transparent"
       }`}
     >
       <div className="max-w-6xl mx-auto px-6 lg:px-12 flex items-center justify-between py-6">
@@ -70,9 +86,9 @@ export default function Nav() {
           <a
             href="#contact"
             className={`text-xs tracking-widest uppercase px-5 py-2.5 rounded-lg transition-colors font-medium ${
-              atTop
-                ? "bg-white text-[#2C5F4A] hover:bg-white/80"
-                : "bg-[#2C5F4A] text-white hover:bg-[#3D7A60]"
+              showSolid
+                ? "bg-[#2C5F4A] text-white hover:bg-[#3D7A60]"
+                : "bg-white text-[#2C5F4A] hover:bg-white/80"
             }`}
           >
             Let&apos;s Talk
@@ -81,13 +97,13 @@ export default function Nav() {
 
         {/* Mobile hamburger */}
         <button
-          className={`md:hidden flex flex-col gap-1.5 p-1 ${textColor}`}
+          className="md:hidden flex flex-col gap-1.5 p-1"
           onClick={() => setMenuOpen(!menuOpen)}
           aria-label="Toggle menu"
         >
-          <span className={`block w-6 h-px transition-all duration-300 ${atTop ? "bg-white" : "bg-[#1A1A1A]"} ${menuOpen ? "rotate-45 translate-y-2" : ""}`} />
-          <span className={`block w-6 h-px transition-all duration-300 ${atTop ? "bg-white" : "bg-[#1A1A1A]"} ${menuOpen ? "opacity-0" : ""}`} />
-          <span className={`block w-6 h-px transition-all duration-300 ${atTop ? "bg-white" : "bg-[#1A1A1A]"} ${menuOpen ? "-rotate-45 -translate-y-2" : ""}`} />
+          <span className={`block w-6 h-px transition-all duration-300 ${showSolid ? "bg-[#1A1A1A]" : "bg-white"} ${menuOpen ? "rotate-45 translate-y-2" : ""}`} />
+          <span className={`block w-6 h-px transition-all duration-300 ${showSolid ? "bg-[#1A1A1A]" : "bg-white"} ${menuOpen ? "opacity-0" : ""}`} />
+          <span className={`block w-6 h-px transition-all duration-300 ${showSolid ? "bg-[#1A1A1A]" : "bg-white"} ${menuOpen ? "-rotate-45 -translate-y-2" : ""}`} />
         </button>
       </div>
 
