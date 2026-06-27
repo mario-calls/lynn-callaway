@@ -96,7 +96,7 @@ export default function About() {
         <div className="mt-12 md:mt-16 grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 pt-8 md:pt-10 border-t border-[#E5E2DC]">
           {[
             { number: "15+", label: "Years of Experience" },
-            { number: "35K+", label: "Households Reached" },
+            { number: "Six-figure", label: "Retail Partnership Landed" },
             { number: "1,700", label: "AmeriCorps Hours" },
             { number: "Magna Cum Laude", label: "FIT Graduate" },
           ].map((stat, i) => (
