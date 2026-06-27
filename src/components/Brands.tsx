@@ -3,10 +3,10 @@ import Reveal from "@/components/Reveal";
 
 
 const brands = [
-  { name: "West Elm", logo: "/images/logos/west-elm.svg", width: 120 },
-  { name: "Sprouts", logo: "/images/logos/sprouts.svg", width: 120 },
-  { name: "Magnolia Home", logo: "/images/logos/magnolia-home.svg", width: 130 },
-  { name: "Essence", logo: "/images/logos/essence.svg", width: 140 },
+  { name: "West Elm", logo: "/images/logos/west-elm.jpg", width: 110 },
+  { name: "Sprouts", logo: "/images/logos/sprouts.png", width: 60 },
+  { name: "Magnolia Home", logo: "/images/logos/magnolia-home.webp", width: 130 },
+  { name: "Essence", logo: "/images/logos/essence.png", width: 140 },
 ];
 
 export default function Brands() {

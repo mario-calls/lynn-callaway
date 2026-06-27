@@ -40,7 +40,7 @@ export default function About() {
                   fontSize: "clamp(1.9rem, 4vw, 3.25rem)",
                 }}
               >
-                15+ Years of Mission-Driven Marketing
+                Mission-Driven Marketing
               </h2>
               <div style={{ width: 40, height: 2, background: "#B8963E", marginBottom: "1.5rem" }} />
 

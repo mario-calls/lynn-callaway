@@ -71,9 +71,6 @@ export default function Work() {
         <Reveal direction="up">
           <div className="flex flex-col md:flex-row md:items-end md:justify-between mb-10 md:mb-16 gap-4">
             <div>
-              <span className="block text-[#2C5F4A] text-xs tracking-[0.2em] uppercase mb-3 font-medium">
-                Selected Work
-              </span>
               <h2
                 className="text-[#3D3D3D] leading-tight"
                 style={{
