@@ -1,34 +1,10 @@
 "use client";
 
-import { useState, useEffect, useRef } from "react";
+import { useState } from "react";
 import Link from "next/link";
 
 export default function Nav() {
-  const [visible, setVisible] = useState(true);
   const [menuOpen, setMenuOpen] = useState(false);
-  const lastViewportH = useRef(0);
-
-  useEffect(() => {
-    lastViewportH.current = window.innerHeight;
-
-    const onScroll = () => {
-      const y = window.scrollY;
-      const vh = window.innerHeight;
-
-      // Ignore iOS Safari URL-bar show/hide events (viewport height change)
-      if (vh !== lastViewportH.current) {
-        lastViewportH.current = vh;
-        lastY.current = y;
-        return;
-      }
-
-      // Show only at the very top; hide as soon as user scrolls away
-      setVisible(y < 60);
-    };
-
-    window.addEventListener("scroll", onScroll, { passive: true });
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
 
   const links = [
     { label: "About", href: "#about" },
@@ -37,11 +13,7 @@ export default function Nav() {
   ];
 
   return (
-    <header
-      className={`fixed top-0 left-0 right-0 z-50 bg-transparent transition-all duration-300 ${
-        visible ? "translate-y-0" : "-translate-y-full"
-      }`}
-    >
+    <header className="absolute top-0 left-0 right-0 z-50">
       <div className="max-w-6xl mx-auto px-6 lg:px-12 flex items-center justify-between py-6">
         <Link
           href="/"
