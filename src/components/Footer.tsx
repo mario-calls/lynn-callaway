@@ -5,22 +5,12 @@ export default function Footer() {
         <span style={{ fontFamily: "var(--font-playfair)", fontSize: "1rem", textTransform: "none", letterSpacing: "0.05em", color: "rgba(255,255,255,0.85)" }}>
           Lynn Callaway
         </span>
-        <div className="flex gap-6">
-          <a
-            href="https://www.linkedin.com/in/lynn-callaway"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:text-white transition-colors"
-          >
-            LinkedIn
-          </a>
-          <a
-            href="mailto:hello@lynncallaway.com"
-            className="hover:text-white transition-colors"
-          >
-            Email
-          </a>
-        </div>
+        <a
+          href="mailto:hello@lynncallaway.co"
+          className="hover:text-white transition-colors"
+        >
+          Email
+        </a>
         <span>&copy; {new Date().getFullYear()} Lynn Callaway. All rights reserved.</span>
       </div>
     </footer>

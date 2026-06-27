@@ -32,10 +32,10 @@ export default function Contact() {
 
         <div className="flex justify-center">
           <a
-            href="mailto:hello@lynncallaway.com"
+            href="mailto:hello@lynncallaway.co"
             className="text-xs tracking-widest uppercase bg-white text-[#2C5F4A] px-8 py-4 hover:bg-[#B8963E] hover:text-white transition-colors font-medium"
           >
-            hello@lynncallaway.com
+            hello@lynncallaway.co
           </a>
         </div>
 

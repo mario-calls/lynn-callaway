@@ -54,11 +54,6 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* Scroll cue */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 hidden md:flex flex-col items-center gap-2 text-white/40 fade-in">
-        <span className="text-[10px] tracking-[0.2em] uppercase">Scroll</span>
-        <span className="w-px h-8 bg-white/30 animate-pulse" />
-      </div>
     </section>
   );
 }
