@@ -16,7 +16,7 @@ const projects = [
     type: "image",
     label: "Advertising Operations",
     title: "Amazon",
-    logo: "/images/logos/amazon-logo.svg",
+    logo: "/images/logos/amazon-logo.webp",
     description:
       "Managed advertising operations and campaign performance across Amazon's digital ad platform, optimizing spend and improving measurable outcomes at scale.",
     tags: ["Digital Advertising", "Campaign Ops", "Analytics"],
@@ -27,7 +27,7 @@ const projects = [
     type: "image",
     label: "Senior Advisor",
     title: "Meta / Facebook",
-    logo: "/images/logos/meta-logo.svg",
+    logo: "/images/logos/meta-logo.png",
     description:
       "Provided strategic counsel on digital campaign performance and community outreach programs, bridging data-driven insights with mission-aligned goals.",
     tags: ["Social Media", "Strategy", "Community"],
@@ -38,7 +38,7 @@ const projects = [
     type: "image",
     label: "Marketing & Outreach",
     title: "City of Austin",
-    logo: "/images/logos/austin-logo.svg",
+    logo: "/images/logos/austin-logo.jpeg",
     description:
       "Led outreach and marketing for customer assistance programs, reaching 35,000+ low-income households through targeted multi-channel campaigns.",
     tags: ["Public Sector", "Community Outreach", "Multicultural Marketing"],
@@ -132,23 +132,14 @@ export default function Work() {
               key={project.id}
               className="border border-[#E5E2DC] overflow-hidden group hover:-translate-y-1 transition-transform duration-300 bg-[#F9F7F4] rounded-2xl"
             >
-              <div
-                className="h-36 md:h-40 flex items-center justify-center px-8"
-                style={{
-                  background:
-                    project.id === "amazon"
-                      ? "#FF9900"
-                      : project.id === "facebook"
-                      ? "#1877F2"
-                      : "#2C5F4A",
-                }}
-              >
+              <div className="h-36 md:h-40 relative overflow-hidden bg-white flex items-center justify-center px-8">
                 <Image
                   src={project.logo!}
                   alt={project.title}
-                  width={180}
-                  height={70}
-                  className="w-full max-w-[160px] h-auto object-contain"
+                  fill
+                  className={`object-contain p-6 ${
+                    project.id === "facebook" ? "object-top scale-[1.15]" : ""
+                  }`}
                 />
               </div>
               <div className="p-5 md:p-6">
