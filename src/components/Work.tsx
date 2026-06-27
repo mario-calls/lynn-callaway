@@ -27,7 +27,7 @@ const projects = [
     id: "facebook",
     type: "image",
     label: "Senior Advisor",
-    title: "Meta / Facebook",
+    title: "Meta",
     logo: "/images/logos/meta-logo.svg",
     description:
       "Provided strategic counsel on digital campaign performance and community outreach programs, bridging data-driven insights with mission-aligned goals.",
