@@ -3,23 +3,17 @@ import Image from "next/image";
 export default function Hero() {
   return (
     <section className="relative min-h-[100svh] bg-[#E7EFDA] overflow-hidden">
-      {/* Full-bleed photo — object-right-top keeps Lynn visible on all viewports */}
       <div className="absolute inset-0 hero-photo-enter">
         <Image
           src="/images/lynn-hero.jpg"
           alt="Lynn Callaway"
           fill
           priority
-          className="object-cover object-right-top"
+          className="object-cover object-center"
           sizes="100vw"
         />
-        {/* Left-side gradient so text stays readable — works on all screen sizes */}
-        <div className="absolute inset-0 bg-gradient-to-r from-[#E7EFDA] via-[#E7EFDA]/60 to-transparent" style={{ width: "65%" }} />
-        {/* Subtle bottom fade on mobile for extra legibility */}
-        <div className="absolute inset-0 bg-gradient-to-t from-[#E7EFDA]/40 via-transparent to-transparent md:hidden" />
       </div>
 
-      {/* Text — vertically centered on all screen sizes */}
       <div className="relative z-10 w-full max-w-6xl mx-auto px-6 lg:px-12 flex flex-col justify-center min-h-[100svh]">
         <div className="max-w-xl pt-24 pb-12">
           <h1
