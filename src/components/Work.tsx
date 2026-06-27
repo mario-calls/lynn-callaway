@@ -72,7 +72,7 @@ export default function Work() {
           <div className="flex flex-col md:flex-row md:items-end md:justify-between mb-10 md:mb-16 gap-4">
             <div>
               <h2
-                className="text-[#555555] leading-tight"
+                className="text-[#333333] leading-tight"
                 style={{
                   fontFamily: "var(--font-raleway)",
                   fontWeight: 800,
@@ -117,7 +117,7 @@ export default function Work() {
                     />
                   </div>
                   <div style={{ width: 32, height: 2, background: "#B8963E", marginBottom: "1.25rem" }} />
-                  <p className="text-[#4A4A4A] text-sm leading-relaxed mb-6">
+                  <p className="text-[#333333] text-sm leading-relaxed mb-6">
                     {featured.description}
                   </p>
                   <div className="flex flex-wrap gap-2">
@@ -156,17 +156,17 @@ export default function Work() {
                     {project.label}
                   </span>
                   <h3
-                    className="text-lg md:text-xl text-[#555555] mb-2"
+                    className="text-lg md:text-xl text-[#333333] mb-2"
                     style={{ fontFamily: "var(--font-raleway)", fontWeight: 700 }}
                   >
                     {project.title}
                   </h3>
-                  <p className="text-[#6B6B6B] text-sm leading-relaxed mb-4">{project.description}</p>
+                  <p className="text-[#333333] text-sm leading-relaxed mb-4">{project.description}</p>
                   <div className="flex flex-wrap gap-1.5">
                     {project.tags.map((tag) => (
                       <span
                         key={tag}
-                        className="text-[9px] tracking-wider uppercase bg-[#E5E2DC] text-[#4A4A4A] px-2 py-0.5 rounded-full"
+                        className="text-[9px] tracking-wider uppercase bg-[#E5E2DC] text-[#333333] px-2 py-0.5 rounded-full"
                       >
                         {tag}
                       </span>

@@ -18,7 +18,7 @@ export default function Contact() {
             Let&apos;s Work Together
           </span>
           <h2
-            className="text-[#555555] mb-5 leading-tight"
+            className="text-[#333333] mb-5 leading-tight"
             style={{
               fontFamily: "var(--font-raleway)",
               fontWeight: 800,
@@ -31,7 +31,7 @@ export default function Contact() {
             style={{ width: 40, height: 2, background: "#B8963E", margin: "0 auto 1.75rem" }}
             aria-hidden
           />
-          <p className="text-[#4A4A4A] text-base md:text-lg mb-10 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-[#333333] text-base md:text-lg mb-10 max-w-2xl mx-auto leading-relaxed">
             Whether you&apos;re launching something new or scaling what you&apos;ve already built,
             I partner with brands whose missions I believe in. Let&apos;s see if we&apos;re a fit.
           </p>
@@ -56,7 +56,7 @@ export default function Contact() {
             <Reveal key={service} direction="fade" delay={i * 80}>
               <div>
                 <div className="text-[#B8963E] text-xl mb-2" aria-hidden>✦</div>
-                <div className="text-[#4A4A4A] text-[10px] md:text-xs tracking-widest uppercase">{service}</div>
+                <div className="text-[#333333] text-[10px] md:text-xs tracking-widest uppercase">{service}</div>
               </div>
             </Reveal>
           ))}

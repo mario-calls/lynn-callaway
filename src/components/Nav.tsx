@@ -29,7 +29,7 @@ export default function Nav() {
             <a
               key={l.label}
               href={l.href}
-              className="text-xs tracking-widest uppercase text-[#555555] hover:text-[#532D3A] transition-colors relative group"
+              className="text-xs tracking-widest uppercase text-[#333333] hover:text-[#532D3A] transition-colors relative group"
             >
               {l.label}
               <span className="absolute -bottom-0.5 left-0 w-0 h-px bg-[#532D3A] group-hover:w-full transition-all duration-300" />
@@ -49,9 +49,9 @@ export default function Nav() {
           onClick={() => setMenuOpen(!menuOpen)}
           aria-label="Toggle menu"
         >
-          <span className={`block w-6 h-px bg-[#555555] transition-all duration-300 ${menuOpen ? "rotate-45 translate-y-2" : ""}`} />
-          <span className={`block w-6 h-px bg-[#555555] transition-all duration-300 ${menuOpen ? "opacity-0" : ""}`} />
-          <span className={`block w-6 h-px bg-[#555555] transition-all duration-300 ${menuOpen ? "-rotate-45 -translate-y-2" : ""}`} />
+          <span className={`block w-6 h-px bg-[#333333] transition-all duration-300 ${menuOpen ? "rotate-45 translate-y-2" : ""}`} />
+          <span className={`block w-6 h-px bg-[#333333] transition-all duration-300 ${menuOpen ? "opacity-0" : ""}`} />
+          <span className={`block w-6 h-px bg-[#333333] transition-all duration-300 ${menuOpen ? "-rotate-45 -translate-y-2" : ""}`} />
         </button>
       </div>
 
@@ -67,7 +67,7 @@ export default function Nav() {
               key={l.label}
               href={l.href}
               onClick={() => setMenuOpen(false)}
-              className="text-sm tracking-widest uppercase text-[#555555] hover:text-[#532D3A] transition-colors"
+              className="text-sm tracking-widest uppercase text-[#333333] hover:text-[#532D3A] transition-colors"
             >
               {l.label}
             </a>

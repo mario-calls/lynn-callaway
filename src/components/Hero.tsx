@@ -17,7 +17,7 @@ export default function Hero() {
       <div className="relative z-10 w-full max-w-6xl mx-auto px-6 lg:px-12 flex flex-col justify-start md:justify-center min-h-[100svh]">
         <div className="w-[33%] md:w-auto md:max-w-xl pt-28 md:pt-24 pb-12">
           <h1
-            className="fade-up text-[#555555] leading-[1.05] mb-8 text-[1.55rem] md:text-[clamp(2rem,5.5vw,4.5rem)]"
+            className="fade-up text-[#333333] leading-[1.05] mb-8 text-[1.55rem] md:text-[clamp(2rem,5.5vw,4.5rem)]"
             style={{
               fontFamily: "var(--font-raleway)",
               fontWeight: 800,

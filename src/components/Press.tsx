@@ -7,7 +7,7 @@ const FORM_ENDPOINT = "https://api.web3forms.com/submit";
 type Status = "idle" | "submitting" | "success" | "error";
 
 const inputClass =
-  "w-full border border-[#E5E2DC] rounded-lg px-4 py-3 text-sm text-[#555555] bg-white focus:outline-none focus:border-[#532D3A] focus:ring-1 focus:ring-[#532D3A] transition-colors placeholder:text-[#ABABAB]";
+  "w-full border border-[#E5E2DC] rounded-lg px-4 py-3 text-sm text-[#333333] bg-white focus:outline-none focus:border-[#532D3A] focus:ring-1 focus:ring-[#532D3A] transition-colors placeholder:text-[#ABABAB]";
 
 export default function Press() {
   const [status, setStatus] = useState<Status>("idle");
@@ -42,7 +42,7 @@ export default function Press() {
               Media &amp; Speaking
             </span>
             <h2
-              className="text-[#555555] leading-tight mb-5"
+              className="text-[#333333] leading-tight mb-5"
               style={{
                 fontFamily: "var(--font-raleway)",
                 fontWeight: 800,
@@ -52,7 +52,7 @@ export default function Press() {
               Let&apos;s Connect
             </h2>
             <div style={{ width: 40, height: 2, background: "#B8963E", margin: "0 auto 1.5rem" }} />
-            <p className="text-[#4A4A4A] text-base md:text-lg max-w-2xl mx-auto leading-relaxed">
+            <p className="text-[#333333] text-base md:text-lg max-w-2xl mx-auto leading-relaxed">
               For media inquiries, interview requests, or speaking engagements, fill out the form below and Lynn&apos;s team will get back to you promptly.
             </p>
           </div>
@@ -68,7 +68,7 @@ export default function Press() {
               >
                 Message Received
               </h3>
-              <p className="text-[#4A4A4A] text-sm leading-relaxed max-w-md mx-auto">
+              <p className="text-[#333333] text-sm leading-relaxed max-w-md mx-auto">
                 Thank you for reaching out. Lynn&apos;s team will be in touch within 2–3 business days.
               </p>
             </div>
@@ -86,7 +86,7 @@ export default function Press() {
               {/* Name row */}
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                 <div>
-                  <label className="block text-xs tracking-widest uppercase text-[#6B6B6B] mb-2">
+                  <label className="block text-xs tracking-widest uppercase text-[#333333] mb-2">
                     First Name <span className="text-[#B8963E]">*</span>
                   </label>
                   <input
@@ -98,7 +98,7 @@ export default function Press() {
                   />
                 </div>
                 <div>
-                  <label className="block text-xs tracking-widest uppercase text-[#6B6B6B] mb-2">
+                  <label className="block text-xs tracking-widest uppercase text-[#333333] mb-2">
                     Last Name <span className="text-[#B8963E]">*</span>
                   </label>
                   <input
@@ -113,7 +113,7 @@ export default function Press() {
 
               {/* Organization */}
               <div>
-                <label className="block text-xs tracking-widest uppercase text-[#6B6B6B] mb-2">
+                <label className="block text-xs tracking-widest uppercase text-[#333333] mb-2">
                   Organization / Publication
                 </label>
                 <input
@@ -126,7 +126,7 @@ export default function Press() {
 
               {/* Email */}
               <div>
-                <label className="block text-xs tracking-widest uppercase text-[#6B6B6B] mb-2">
+                <label className="block text-xs tracking-widest uppercase text-[#333333] mb-2">
                   Email Address <span className="text-[#B8963E]">*</span>
                 </label>
                 <input
@@ -140,7 +140,7 @@ export default function Press() {
 
               {/* Inquiry type */}
               <div>
-                <label className="block text-xs tracking-widest uppercase text-[#6B6B6B] mb-2">
+                <label className="block text-xs tracking-widest uppercase text-[#333333] mb-2">
                   Type of Inquiry <span className="text-[#B8963E]">*</span>
                 </label>
                 <div className="relative">
@@ -156,13 +156,13 @@ export default function Press() {
                     <option value="Podcast / Interview">Podcast / Interview</option>
                     <option value="Other">Other</option>
                   </select>
-                  <span className="pointer-events-none absolute right-4 top-1/2 -translate-y-1/2 text-[#6B6B6B] text-xs">▾</span>
+                  <span className="pointer-events-none absolute right-4 top-1/2 -translate-y-1/2 text-[#333333] text-xs">▾</span>
                 </div>
               </div>
 
               {/* Message */}
               <div>
-                <label className="block text-xs tracking-widest uppercase text-[#6B6B6B] mb-2">
+                <label className="block text-xs tracking-widest uppercase text-[#333333] mb-2">
                   Message <span className="text-[#B8963E]">*</span>
                 </label>
                 <textarea

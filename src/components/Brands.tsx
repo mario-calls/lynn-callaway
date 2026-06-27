@@ -14,7 +14,7 @@ export default function Brands() {
     <section className="bg-white border-y border-[#E5E2DC] pt-12 pb-14 md:pt-14 md:pb-16">
       <div className="max-w-6xl mx-auto px-6 lg:px-12">
         <Reveal direction="fade">
-          <p className="text-center text-xs tracking-[0.2em] uppercase text-[#6B6B6B] mb-8 md:hidden">
+          <p className="text-center text-xs tracking-[0.2em] uppercase text-[#333333] mb-8 md:hidden">
             Brands seen in
           </p>
         </Reveal>
@@ -39,7 +39,7 @@ export default function Brands() {
         {/* Desktop: single row */}
         <div className="hidden md:flex flex-row items-center justify-between">
           <Reveal direction="fade">
-            <span className="text-xs tracking-[0.2em] uppercase text-[#6B6B6B] whitespace-nowrap shrink-0 mr-10">
+            <span className="text-xs tracking-[0.2em] uppercase text-[#333333] whitespace-nowrap shrink-0 mr-10">
               Brands seen in
             </span>
           </Reveal>
@@ -61,7 +61,7 @@ export default function Brands() {
         {/* Positioning statement */}
         <Reveal direction="up" delay={150}>
           <p
-            className="text-center text-[#555555] max-w-3xl mx-auto mt-14 md:mt-16 leading-snug"
+            className="text-center text-[#333333] max-w-3xl mx-auto mt-14 md:mt-16 leading-snug"
             style={{
               fontFamily: "var(--font-raleway)",
               fontWeight: 700,

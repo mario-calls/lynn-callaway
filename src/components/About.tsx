@@ -33,7 +33,7 @@ export default function About() {
                 About Lynn
               </span>
               <h2
-                className="text-[#555555] mb-6 leading-tight"
+                className="text-[#333333] mb-6 leading-tight"
                 style={{
                   fontFamily: "var(--font-raleway)",
                   fontWeight: 800,
@@ -44,7 +44,7 @@ export default function About() {
               </h2>
               <div style={{ width: 40, height: 2, background: "#B8963E", marginBottom: "1.5rem" }} />
 
-              <div className="space-y-4 text-[#4A4A4A] text-sm sm:text-base leading-relaxed">
+              <div className="space-y-4 text-[#333333] text-sm sm:text-base leading-relaxed">
                 <p>
                   I&apos;m a marketing and partnerships professional spanning grassroots organizing,
                   tech, social enterprise, and the public sector. I got my start building community spaces and
@@ -108,7 +108,7 @@ export default function About() {
                 >
                   {stat.number}
                 </div>
-                <div className="text-[10px] md:text-xs tracking-widest uppercase text-[#6B6B6B]">{stat.label}</div>
+                <div className="text-[10px] md:text-xs tracking-widest uppercase text-[#333333]">{stat.label}</div>
               </div>
             </Reveal>
           ))}
