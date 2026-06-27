@@ -47,15 +47,15 @@ const projects = [
     featured: false,
   },
   {
-    id: "faraway",
+    id: "americorps",
     type: "image",
-    label: "Founder",
-    title: "Faraway",
-    logo: "/images/logos/faraway-logo.png",
+    label: "AmeriCorps Alum",
+    title: "AmeriCorps",
+    logo: "/images/americorps.jpg",
     coverLogo: true,
     description:
-      "Founded and built Faraway, a postcard exchange community that connects people across the globe through the timeless art of handwritten mail.",
-    tags: ["Community Building", "Brand Development", "Founder"],
+      "As an AmeriCorps alum, I dedicated 1,700 hours of service to low-income communities on the Southside of Syracuse, NY. I worked directly with residents to address community needs and build local capacity. This experience grounded my career in grassroots organizing and community-centered impact.",
+    tags: ["Community Organizing", "Public Service", "AmeriCorps"],
     featured: false,
   },
 ];

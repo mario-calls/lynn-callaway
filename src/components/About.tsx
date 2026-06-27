@@ -68,8 +68,16 @@ export default function About() {
                 </p>
                 <p>
                   I hold a BS in Digital Marketing from FIT, graduating Magna Cum Laude, with a track record
-                  of turning mission-driven work into measurable results. In my free time I run a postcard
-                  exchange community and love to travel.
+                  of turning mission-driven work into measurable results. In my free time I run{" "}
+                  <a
+                    href="https://www.joinfaraway.co"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="font-bold text-[#532D3A] underline-offset-2 hover:underline"
+                  >
+                    Faraway
+                  </a>
+                  , a postcard exchange community, and love to travel.
                 </p>
               </div>
 
