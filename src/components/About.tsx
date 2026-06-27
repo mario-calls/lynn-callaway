@@ -3,7 +3,7 @@ import Reveal from "@/components/Reveal";
 
 export default function About() {
   return (
-    <section id="about" className="pt-16 pb-8 md:pt-28 md:pb-14 lg:pt-36 lg:pb-20 bg-[#F9F7F4]">
+    <section id="about" className="pt-16 pb-4 md:pt-28 md:pb-6 lg:pt-36 lg:pb-8 bg-[#F9F7F4]">
       <div className="max-w-6xl mx-auto px-6 lg:px-12">
         <div className="grid md:grid-cols-2 gap-10 lg:gap-24 items-center">
 
@@ -93,7 +93,7 @@ export default function About() {
         </div>
 
         {/* Stats row */}
-        <div className="mt-16 md:mt-24 grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 pt-12 md:pt-16 border-t border-[#E5E2DC]">
+        <div className="mt-12 md:mt-16 grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 pt-8 md:pt-10 border-t border-[#E5E2DC]">
           {[
             { number: "15+", label: "Years of Experience" },
             { number: "35K+", label: "Households Reached" },
