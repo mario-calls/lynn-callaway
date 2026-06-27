@@ -80,7 +80,7 @@ export default function Press() {
               className="bg-white rounded-2xl border border-[#E5E2DC] p-6 md:p-10 lg:p-12 space-y-5"
             >
               <input type="hidden" name="access_key" value="e3be8008-dca9-4ef0-90db-a11e0a1e4b0c" />
-              <input type="hidden" name="subject" value="New Press & Speaking Inquiry — lynncallaway.co" />
+              <input type="hidden" name="subject" value="New Press Inquiry — lynncallaway.co" />
               <input type="hidden" name="from_name" value="Lynn Callaway Website" />
 
               {/* Name row */}

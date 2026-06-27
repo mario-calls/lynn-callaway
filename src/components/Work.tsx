@@ -26,7 +26,7 @@ const projects = [
   {
     id: "facebook",
     type: "image",
-    label: "Senior Advisor",
+    label: "Advertising Operations",
     title: "Meta",
     logo: "/images/logos/meta-logo.svg",
     description:
