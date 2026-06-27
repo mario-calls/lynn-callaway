@@ -9,13 +9,13 @@ export default function Hero() {
           alt="Lynn Callaway"
           fill
           priority
-          className="object-cover object-[82%_top] md:object-[center_top]"
+          className="object-cover object-[88%_top] md:object-[center_top]"
           sizes="100vw"
         />
       </div>
 
-      <div className="relative z-10 w-full max-w-6xl mx-auto px-6 lg:px-12 flex flex-col justify-center min-h-[100svh]">
-        <div className="max-w-xl pt-24 pb-12">
+      <div className="relative z-10 w-full max-w-6xl mx-auto px-6 lg:px-12 flex flex-col justify-start md:justify-center min-h-[100svh]">
+        <div className="max-w-[52%] md:max-w-xl pt-28 md:pt-24 pb-12">
           <h1
             className="fade-up text-[#555555] leading-[1.05] mb-8"
             style={{
