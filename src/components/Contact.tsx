@@ -2,12 +2,12 @@ import Reveal from "@/components/Reveal";
 
 export default function Contact() {
   return (
-    <section id="contact" className="py-16 md:py-28 lg:py-36 bg-[#2C5F4A] relative overflow-hidden">
+    <section id="contact" className="py-16 md:py-28 lg:py-36 bg-[#E7EFDA] relative overflow-hidden">
       <div
-        className="absolute inset-0 opacity-[0.04]"
+        className="absolute inset-0 opacity-[0.06]"
         style={{
           backgroundImage:
-            "repeating-linear-gradient(0deg, transparent, transparent 60px, white 60px, white 61px), repeating-linear-gradient(90deg, transparent, transparent 60px, white 60px, white 61px)",
+            "repeating-linear-gradient(0deg, transparent, transparent 60px, #2C5F4A 60px, #2C5F4A 61px), repeating-linear-gradient(90deg, transparent, transparent 60px, #2C5F4A 60px, #2C5F4A 61px)",
         }}
         aria-hidden
       />
@@ -18,7 +18,7 @@ export default function Contact() {
             Let&apos;s Work Together
           </span>
           <h2
-            className="text-white mb-5 leading-tight"
+            className="text-[#1A1A1A] mb-5 leading-tight"
             style={{
               fontFamily: "var(--font-raleway)",
               fontWeight: 800,
@@ -31,7 +31,7 @@ export default function Contact() {
             style={{ width: 40, height: 2, background: "#B8963E", margin: "0 auto 1.75rem" }}
             aria-hidden
           />
-          <p className="text-white/75 text-base md:text-lg mb-10 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-[#4A4A4A] text-base md:text-lg mb-10 max-w-2xl mx-auto leading-relaxed">
             Whether you&apos;re launching something new or scaling what you&apos;ve already built,
             I partner with brands whose missions I believe in. Let&apos;s see if we&apos;re a fit.
           </p>
@@ -39,14 +39,14 @@ export default function Contact() {
           <div className="flex justify-center">
             <a
               href="mailto:hello@lynncallaway.co"
-              className="text-[10px] sm:text-xs tracking-widest uppercase bg-white text-[#2C5F4A] px-6 sm:px-8 py-4 hover:bg-[#B8963E] hover:text-white transition-colors font-medium rounded-lg"
+              className="text-[10px] sm:text-xs tracking-widest uppercase bg-[#2C5F4A] text-white px-6 sm:px-8 py-4 hover:bg-[#B8963E] transition-colors font-medium rounded-lg"
             >
               hello@lynncallaway.co
             </a>
           </div>
         </Reveal>
 
-        <div className="mt-16 md:mt-20 pt-12 md:pt-16 border-t border-white/20 grid grid-cols-2 md:grid-cols-4 gap-5 md:gap-6 text-center">
+        <div className="mt-16 md:mt-20 pt-12 md:pt-16 border-t border-[#2C5F4A]/20 grid grid-cols-2 md:grid-cols-4 gap-5 md:gap-6 text-center">
           {[
             "Brand Strategy",
             "Content Marketing",
@@ -56,7 +56,7 @@ export default function Contact() {
             <Reveal key={service} direction="fade" delay={i * 80}>
               <div>
                 <div className="text-[#B8963E] text-xl mb-2" aria-hidden>✦</div>
-                <div className="text-white/80 text-[10px] md:text-xs tracking-widest uppercase">{service}</div>
+                <div className="text-[#4A4A4A] text-[10px] md:text-xs tracking-widest uppercase">{service}</div>
               </div>
             </Reveal>
           ))}

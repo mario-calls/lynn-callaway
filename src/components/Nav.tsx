@@ -18,7 +18,7 @@ export default function Nav() {
       <div className="max-w-6xl mx-auto px-6 lg:px-12 flex items-center justify-between py-6">
         <Link
           href="/"
-          className="text-2xl text-white hover:text-white/70 transition-colors"
+          className="text-2xl text-[#1A1A1A] hover:text-[#2C5F4A] transition-colors"
           style={{ fontFamily: "var(--font-raleway)", fontWeight: 800, letterSpacing: "0.05em" }}
         >
           Lynn Callaway
@@ -30,15 +30,15 @@ export default function Nav() {
             <a
               key={l.label}
               href={l.href}
-              className="text-xs tracking-widest uppercase text-white hover:text-white/70 transition-colors relative group"
+              className="text-xs tracking-widest uppercase text-[#1A1A1A] hover:text-[#2C5F4A] transition-colors relative group"
             >
               {l.label}
-              <span className="absolute -bottom-0.5 left-0 w-0 h-px bg-white group-hover:w-full transition-all duration-300" />
+              <span className="absolute -bottom-0.5 left-0 w-0 h-px bg-[#2C5F4A] group-hover:w-full transition-all duration-300" />
             </a>
           ))}
           <a
             href="#contact"
-            className="text-xs tracking-widest uppercase px-5 py-2.5 rounded-lg font-medium bg-white text-[#2C5F4A] hover:bg-white/80 transition-colors"
+            className="text-xs tracking-widest uppercase px-5 py-2.5 rounded-lg font-medium bg-[#2C5F4A] text-white hover:bg-[#3D7A60] transition-colors"
           >
             Let&apos;s Talk
           </a>
@@ -50,9 +50,9 @@ export default function Nav() {
           onClick={() => setMenuOpen(!menuOpen)}
           aria-label="Toggle menu"
         >
-          <span className={`block w-6 h-px bg-white transition-all duration-300 ${menuOpen ? "rotate-45 translate-y-2" : ""}`} />
-          <span className={`block w-6 h-px bg-white transition-all duration-300 ${menuOpen ? "opacity-0" : ""}`} />
-          <span className={`block w-6 h-px bg-white transition-all duration-300 ${menuOpen ? "-rotate-45 -translate-y-2" : ""}`} />
+          <span className={`block w-6 h-px bg-[#1A1A1A] transition-all duration-300 ${menuOpen ? "rotate-45 translate-y-2" : ""}`} />
+          <span className={`block w-6 h-px bg-[#1A1A1A] transition-all duration-300 ${menuOpen ? "opacity-0" : ""}`} />
+          <span className={`block w-6 h-px bg-[#1A1A1A] transition-all duration-300 ${menuOpen ? "-rotate-45 -translate-y-2" : ""}`} />
         </button>
       </div>
 

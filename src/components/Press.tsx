@@ -33,13 +33,13 @@ export default function Press() {
   };
 
   return (
-    <section id="press" className="py-16 md:py-28 lg:py-36 bg-[#E7EFDA]">
+    <section id="press" className="py-16 md:py-28 lg:py-36 bg-[#F9F7F4]">
       <div className="max-w-4xl mx-auto px-6 lg:px-12">
 
         <Reveal direction="up">
           <div className="text-center mb-12 md:mb-16">
             <span className="block text-[#B8963E] text-xs tracking-[0.2em] uppercase mb-4 font-medium">
-              Press &amp; Speaking
+              Press
             </span>
             <h2
               className="text-[#1A1A1A] leading-tight mb-5"
