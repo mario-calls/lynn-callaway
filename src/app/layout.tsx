@@ -1,18 +1,13 @@
 import type { Metadata } from "next";
-import { Inter, Playfair_Display } from "next/font/google";
+import { Raleway } from "next/font/google";
 import "./globals.css";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 
-const inter = Inter({
-  variable: "--font-inter",
+const raleway = Raleway({
+  variable: "--font-raleway",
   subsets: ["latin"],
-  display: "swap",
-});
-
-const playfair = Playfair_Display({
-  variable: "--font-playfair",
-  subsets: ["latin"],
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800"],
   display: "swap",
 });
 
@@ -26,7 +21,7 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en" className={`${inter.variable} ${playfair.variable}`}>
+    <html lang="en" className={raleway.variable}>
       <body className="min-h-screen flex flex-col">
         <Nav />
         <main className="flex-1">{children}</main>

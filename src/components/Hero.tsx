@@ -27,7 +27,7 @@ export default function Hero() {
           </span>
           <h1
             className="fade-up delay-2 text-white leading-tight mb-6"
-            style={{ fontFamily: "var(--font-playfair)", fontSize: "clamp(2.5rem, 5vw, 4rem)" }}
+            style={{ fontFamily: "var(--font-raleway)", fontSize: "clamp(2.5rem, 5vw, 4rem)" }}
           >
             I help brands with good <em>ethos</em> do better.
           </h1>

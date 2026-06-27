@@ -31,7 +31,7 @@ export default function About() {
             </span>
             <h2
               className="text-4xl md:text-5xl text-[#1A1A1A] mb-6 leading-tight"
-              style={{ fontFamily: "var(--font-playfair)" }}
+              style={{ fontFamily: "var(--font-raleway)" }}
             >
               15+ Years of Mission-Driven Marketing
             </h2>
@@ -87,7 +87,7 @@ export default function About() {
             <div key={stat.label} className="text-center md:text-left">
               <div
                 className="text-3xl md:text-4xl text-[#2C5F4A] mb-2 whitespace-pre-line leading-tight"
-                style={{ fontFamily: "var(--font-playfair)" }}
+                style={{ fontFamily: "var(--font-raleway)" }}
               >
                 {stat.number}
               </div>

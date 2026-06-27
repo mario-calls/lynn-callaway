@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 @theme inline {
-  --font-sans: var(--font-inter);
-  --font-display: var(--font-playfair);
+  --font-sans: var(--font-raleway);
+  --font-display: var(--font-raleway);
   --color-green: #2C5F4A;
   --color-green-light: #3D7A60;
   --color-gold: #B8963E;
@@ -19,7 +19,7 @@ html {
 body {
   background-color: #F9F7F4;
   color: #1A1A1A;
-  font-family: var(--font-inter), sans-serif;
+  font-family: var(--font-raleway), sans-serif;
   -webkit-font-smoothing: antialiased;
 }
 

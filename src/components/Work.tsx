@@ -59,7 +59,7 @@ export default function Work() {
             </span>
             <h2
               className="text-4xl md:text-5xl text-[#1A1A1A] leading-tight"
-              style={{ fontFamily: "var(--font-playfair)" }}
+              style={{ fontFamily: "var(--font-raleway)" }}
             >
               Brands I&apos;ve Built &amp; Grown
             </h2>
@@ -92,7 +92,7 @@ export default function Work() {
                 </span>
                 <h3
                   className="text-3xl md:text-4xl text-[#1A1A1A] mb-4 leading-tight"
-                  style={{ fontFamily: "var(--font-playfair)" }}
+                  style={{ fontFamily: "var(--font-raleway)" }}
                 >
                   {featured.title}
                 </h3>
@@ -136,7 +136,7 @@ export default function Work() {
               >
                 <span
                   className="text-white text-2xl font-bold tracking-tight"
-                  style={{ fontFamily: "var(--font-playfair)" }}
+                  style={{ fontFamily: "var(--font-raleway)" }}
                 >
                   {project.title}
                 </span>
@@ -147,7 +147,7 @@ export default function Work() {
                 </span>
                 <h3
                   className="text-xl text-[#1A1A1A] mb-3"
-                  style={{ fontFamily: "var(--font-playfair)" }}
+                  style={{ fontFamily: "var(--font-raleway)" }}
                 >
                   {project.title}
                 </h3>
