@@ -1,15 +1,28 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 
 export default function Nav() {
-  const [scrolled, setScrolled] = useState(false);
+  const [visible, setVisible] = useState(true);
+  const [atTop, setAtTop] = useState(true);
   const [menuOpen, setMenuOpen] = useState(false);
+  const lastY = useRef(0);
 
   useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 20);
-    window.addEventListener("scroll", onScroll);
+    const onScroll = () => {
+      const y = window.scrollY;
+      setAtTop(y < 40);
+      if (y < 40) {
+        setVisible(true);
+      } else if (y > lastY.current + 8) {
+        setVisible(false);
+      } else if (y < lastY.current - 8) {
+        setVisible(true);
+      }
+      lastY.current = y;
+    };
+    window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
@@ -19,17 +32,25 @@ export default function Nav() {
     { label: "Contact", href: "#contact" },
   ];
 
+  const textColor = atTop ? "text-white" : "text-[#1A1A1A]";
+  const hoverColor = atTop ? "hover:text-white/70" : "hover:text-[#2C5F4A]";
+  const underlineColor = atTop ? "bg-white" : "bg-[#2C5F4A]";
+
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled ? "bg-[#F9F7F4]/95 backdrop-blur-sm shadow-sm" : "bg-transparent"
+        visible ? "translate-y-0" : "-translate-y-full"
+      } ${
+        atTop
+          ? "bg-transparent"
+          : "bg-[#F9F7F4]/96 backdrop-blur-sm shadow-sm"
       }`}
     >
-      <div className="max-w-6xl mx-auto px-6 lg:px-12 h-18 flex items-center justify-between py-5">
+      <div className="max-w-6xl mx-auto px-6 lg:px-12 flex items-center justify-between py-6">
         <Link
           href="/"
-          className="font-display text-xl tracking-wide text-[#1A1A1A] hover:text-[#2C5F4A] transition-colors"
-          style={{ fontFamily: "var(--font-raleway)", fontWeight: 700 }}
+          className={`text-2xl tracking-wide transition-colors ${textColor} ${hoverColor}`}
+          style={{ fontFamily: "var(--font-raleway)", fontWeight: 800 }}
         >
           Lynn Callaway
         </Link>
@@ -40,15 +61,19 @@ export default function Nav() {
             <a
               key={l.label}
               href={l.href}
-              className="text-xs tracking-widest uppercase text-[#1A1A1A] hover:text-[#2C5F4A] transition-colors relative group"
+              className={`text-xs tracking-widest uppercase transition-colors relative group ${textColor} ${hoverColor}`}
             >
               {l.label}
-              <span className="absolute -bottom-0.5 left-0 w-0 h-px bg-[#2C5F4A] group-hover:w-full transition-all duration-300" />
+              <span className={`absolute -bottom-0.5 left-0 w-0 h-px ${underlineColor} group-hover:w-full transition-all duration-300`} />
             </a>
           ))}
           <a
             href="#contact"
-            className="text-xs tracking-widest uppercase bg-[#2C5F4A] text-white px-5 py-2.5 hover:bg-[#3D7A60] transition-colors rounded-lg"
+            className={`text-xs tracking-widest uppercase px-5 py-2.5 rounded-lg transition-colors font-medium ${
+              atTop
+                ? "bg-white text-[#2C5F4A] hover:bg-white/80"
+                : "bg-[#2C5F4A] text-white hover:bg-[#3D7A60]"
+            }`}
           >
             Let&apos;s Talk
           </a>
@@ -56,13 +81,13 @@ export default function Nav() {
 
         {/* Mobile hamburger */}
         <button
-          className="md:hidden flex flex-col gap-1.5 p-1"
+          className={`md:hidden flex flex-col gap-1.5 p-1 ${textColor}`}
           onClick={() => setMenuOpen(!menuOpen)}
           aria-label="Toggle menu"
         >
-          <span className={`block w-6 h-px bg-[#1A1A1A] transition-all duration-300 ${menuOpen ? "rotate-45 translate-y-2" : ""}`} />
-          <span className={`block w-6 h-px bg-[#1A1A1A] transition-all duration-300 ${menuOpen ? "opacity-0" : ""}`} />
-          <span className={`block w-6 h-px bg-[#1A1A1A] transition-all duration-300 ${menuOpen ? "-rotate-45 -translate-y-2" : ""}`} />
+          <span className={`block w-6 h-px transition-all duration-300 ${atTop ? "bg-white" : "bg-[#1A1A1A]"} ${menuOpen ? "rotate-45 translate-y-2" : ""}`} />
+          <span className={`block w-6 h-px transition-all duration-300 ${atTop ? "bg-white" : "bg-[#1A1A1A]"} ${menuOpen ? "opacity-0" : ""}`} />
+          <span className={`block w-6 h-px transition-all duration-300 ${atTop ? "bg-white" : "bg-[#1A1A1A]"} ${menuOpen ? "-rotate-45 -translate-y-2" : ""}`} />
         </button>
       </div>
 
