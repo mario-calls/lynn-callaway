@@ -21,8 +21,12 @@ export default function Reveal({
     if (!el) return;
 
     const show = () => {
-      el.style.opacity = "1";
-      el.style.transform = "none";
+      // rAF ensures the initial hidden paint happens before we animate,
+      // which is necessary for elements already visible on mobile load
+      requestAnimationFrame(() => {
+        el.style.opacity = "1";
+        el.style.transform = "none";
+      });
     };
 
     const observer = new IntersectionObserver(
@@ -32,7 +36,7 @@ export default function Reveal({
           observer.unobserve(el);
         }
       },
-      { threshold: 0.1, rootMargin: "0px 0px -40px 0px" }
+      { threshold: 0.05, rootMargin: "0px" }
     );
 
     observer.observe(el);
