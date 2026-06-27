@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 80" fill="none">
+  <!-- Meta infinity symbol (simplified) -->
+  <path d="M40,40 C40,28 50,20 62,20 C74,20 82,30 100,40 C118,50 126,60 138,60 C150,60 160,52 160,40 C160,28 150,20 138,20 C126,20 118,30 100,40 C82,50 74,60 62,60 C50,60 40,52 40,40 Z" stroke="white" stroke-width="6" fill="none" stroke-linejoin="round"/>
+  <!-- Meta wordmark -->
+  <text x="100" y="74" text-anchor="middle" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="16" font-weight="700" fill="white" letter-spacing="3">META</text>
+</svg>

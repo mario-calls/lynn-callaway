@@ -16,6 +16,7 @@ const projects = [
     type: "image",
     label: "Advertising Operations",
     title: "Amazon",
+    logo: "/images/logos/amazon-logo.svg",
     description:
       "Managed advertising operations and campaign performance across Amazon's digital ad platform, optimizing spend and improving measurable outcomes at scale.",
     tags: ["Digital Advertising", "Campaign Ops", "Analytics"],
@@ -26,6 +27,7 @@ const projects = [
     type: "image",
     label: "Senior Advisor",
     title: "Meta / Facebook",
+    logo: "/images/logos/meta-logo.svg",
     description:
       "Provided strategic counsel on digital campaign performance and community outreach programs, bridging data-driven insights with mission-aligned goals.",
     tags: ["Social Media", "Strategy", "Community"],
@@ -36,6 +38,7 @@ const projects = [
     type: "image",
     label: "Marketing & Outreach",
     title: "City of Austin",
+    logo: "/images/logos/austin-logo.svg",
     description:
       "Led outreach and marketing for customer assistance programs, reaching 35,000+ low-income households through targeted multi-channel campaigns.",
     tags: ["Public Sector", "Community Outreach", "Multicultural Marketing"],
@@ -130,7 +133,7 @@ export default function Work() {
               className="border border-[#E5E2DC] overflow-hidden group hover:-translate-y-1 transition-transform duration-300 bg-[#F9F7F4] rounded-2xl"
             >
               <div
-                className="h-36 md:h-40 flex items-center justify-center"
+                className="h-36 md:h-40 flex items-center justify-center px-8"
                 style={{
                   background:
                     project.id === "amazon"
@@ -140,12 +143,13 @@ export default function Work() {
                       : "#2C5F4A",
                 }}
               >
-                <span
-                  className="text-white text-xl md:text-2xl font-bold tracking-tight"
-                  style={{ fontFamily: "var(--font-raleway)" }}
-                >
-                  {project.title}
-                </span>
+                <Image
+                  src={project.logo!}
+                  alt={project.title}
+                  width={180}
+                  height={70}
+                  className="w-full max-w-[160px] h-auto object-contain"
+                />
               </div>
               <div className="p-5 md:p-6">
                 <span className="text-[10px] tracking-[0.2em] uppercase text-[#B8963E] font-medium mb-2 block">

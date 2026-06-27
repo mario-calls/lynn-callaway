@@ -9,9 +9,9 @@ const brands = [
 
 export default function Brands() {
   return (
-    <section className="bg-white border-y border-[#E5E2DC] py-10 md:py-12">
+    <section className="bg-white border-y border-[#E5E2DC] pt-16 pb-12 md:pt-16 md:pb-12">
       <div className="max-w-6xl mx-auto px-6 lg:px-12">
-        <p className="text-center text-xs tracking-[0.2em] uppercase text-[#6B6B6B] mb-7 md:hidden">
+        <p className="text-center text-xs tracking-[0.2em] uppercase text-[#6B6B6B] mb-8 md:hidden">
           Brands seen in
         </p>
 
