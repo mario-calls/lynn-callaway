@@ -17,7 +17,7 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "Lynn Callaway — Marketing Strategist & Brand Consultant",
+  title: "Lynn Callaway | Marketing Strategist & Brand Consultant",
   description:
     "Lynn Callaway is an entrepreneur and marketing strategist who builds growth for social impact brands and community-rooted businesses.",
 };

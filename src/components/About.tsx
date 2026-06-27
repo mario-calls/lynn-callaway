@@ -45,7 +45,7 @@ export default function About() {
                 alum serving low-income communities in Syracuse, NY.
               </p>
               <p>
-                That grassroots foundation shaped every role since — from advertising operations and campaign
+                That grassroots foundation shaped every role since, from advertising operations and campaign
                 performance at Amazon and Facebook, to co-founding{" "}
                 <strong className="text-[#2C5F4A]">good dirt®</strong>, a functional mushroom beverage brand
                 scaled to national retail including Sprouts, to managing outreach and marketing for the City

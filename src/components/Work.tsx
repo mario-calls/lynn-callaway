@@ -7,7 +7,7 @@ const projects = [
     label: "Co-Founder & Brand Lead",
     title: "good dirt®",
     description:
-      "Co-founded a functional mushroom beverage brand from concept to national retail — landing shelf space at Sprouts and other major retailers through strategic brand positioning, community marketing, and mission-aligned storytelling.",
+      "Co-founded a functional mushroom beverage brand from concept to national retail, landing shelf space at Sprouts and other major retailers through strategic brand positioning, community marketing, and mission-aligned storytelling.",
     tags: ["Brand Strategy", "CPG", "National Retail", "Co-Founder"],
     featured: true,
   },
@@ -65,7 +65,7 @@ export default function Work() {
             </h2>
           </div>
           <p className="text-[#6B6B6B] max-w-xs text-sm leading-relaxed">
-            From startup to enterprise — turning good values into measurable brand growth.
+            From startup to enterprise, turning good values into measurable brand growth.
           </p>
         </div>
 
