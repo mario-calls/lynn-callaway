@@ -40,7 +40,7 @@ const projects = [
     type: "image",
     label: "Marketing & Outreach",
     title: "City of Austin",
-    logo: "/images/coa.heic",
+    logo: "/images/coa.png",
     coverLogo: true,
     description:
       "I managed outreach for the City of Austin's customer assistance programs, connecting vulnerable populations to vital resources. I built a community referral network from the ground up, reaching 35,000+ households across the city. This role deepened my commitment to translating public sector work into measurable, on-the-ground impact.",
