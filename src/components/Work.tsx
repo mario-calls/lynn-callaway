@@ -17,7 +17,7 @@ const projects = [
     type: "image",
     label: "Founder",
     title: "Ollie & Otto",
-    logo: "/images/ollie-and-otto.png",
+    logo: "/images/ollie-and-otto.webp",
     coverLogo: true,
     description:
       "I founded Ollie & Otto, a social impact skincare company creating non-toxic personal care items for the entire family. For every product sold, the brand provided water to an individual in need, with contributions funding water wells in countries like Haiti and West Africa. It was a powerful example of how purpose and product can work together to create tangible, global impact.",
