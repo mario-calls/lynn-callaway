@@ -2,8 +2,7 @@
 import { useState, FormEvent } from "react";
 import Reveal from "@/components/Reveal";
 
-// Sign up free at formspree.io → create a form → replace YOUR_FORM_ID below
-const FORM_ENDPOINT = "https://formspree.io/f/YOUR_FORM_ID";
+const FORM_ENDPOINT = "https://api.web3forms.com/submit";
 
 type Status = "idle" | "submitting" | "success" | "error";
 
@@ -80,6 +79,10 @@ export default function Press() {
               onSubmit={handleSubmit}
               className="bg-white rounded-2xl border border-[#E5E2DC] p-6 md:p-10 lg:p-12 space-y-5"
             >
+              <input type="hidden" name="access_key" value="e3be8008-dca9-4ef0-90db-a11e0a1e4b0c" />
+              <input type="hidden" name="subject" value="New Press & Speaking Inquiry — lynncallaway.co" />
+              <input type="hidden" name="from_name" value="Lynn Callaway Website" />
+
               {/* Name row */}
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                 <div>
