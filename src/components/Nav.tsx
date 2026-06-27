@@ -13,7 +13,7 @@ export default function Nav() {
   ];
 
   return (
-    <header className="absolute top-0 left-0 right-0 z-50">
+    <header className="absolute top-0 left-0 right-0 z-[100]">
       <div className="max-w-6xl mx-auto px-6 lg:px-12 flex items-center justify-between py-6">
         <Link
           href="/"

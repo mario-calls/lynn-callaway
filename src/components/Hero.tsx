@@ -13,10 +13,10 @@ export default function Hero() {
           className="object-cover object-[center_top]"
           sizes="(max-width: 768px) 100vw, 52vw"
         />
-        {/* Mobile: tight bottom gradient — only covers behind the text, body stays clear */}
-        <div className="absolute inset-0 bg-gradient-to-t from-[#2C5F4A] from-[8%] via-[#2C5F4A]/50 via-[28%] to-transparent to-[45%] md:hidden" />
-        {/* Desktop: narrow left-edge blend only — no overlay on Lynn's body */}
-        <div className="hidden md:block absolute inset-y-0 left-0 bg-gradient-to-r from-[#2C5F4A] to-transparent" style={{ width: "12%" }} />
+        {/* Mobile: gradient only covers the bottom ~40% so face stays fully visible */}
+        <div className="absolute inset-0 bg-gradient-to-t from-[#2C5F4A] from-[15%] via-[#2C5F4A]/60 via-[38%] to-transparent to-[55%] md:hidden" />
+        {/* Desktop: left-side gradient */}
+        <div className="hidden md:block absolute inset-0 bg-gradient-to-r from-[#2C5F4A] via-[#2C5F4A]/20 to-transparent" style={{ width: "40%" }} />
       </div>
 
       {/* Text: bottom-anchored on mobile, centered on desktop */}
