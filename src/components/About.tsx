@@ -98,7 +98,7 @@ export default function About() {
             { number: "15+", label: "Years of Experience" },
             { number: "Six-figure", label: "Retail Partnership Landed" },
             { number: "1,700", label: "AmeriCorps Hours" },
-            { number: "Magna Cum Laude", label: "FIT Graduate" },
+            { number: "35,000+", label: "Households Connected to Vital Resources" },
           ].map((stat, i) => (
             <Reveal key={stat.label} direction="up" delay={i * 80}>
               <div className="text-center md:text-left">
