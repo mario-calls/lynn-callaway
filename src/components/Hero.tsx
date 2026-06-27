@@ -3,25 +3,25 @@ import Image from "next/image";
 export default function Hero() {
   return (
     <section className="relative min-h-[100svh] bg-[#E7EFDA] overflow-hidden">
-      {/* Full-bleed image on mobile, right half on desktop */}
-      <div className="absolute inset-0 md:left-[48%]">
+      {/* Full-bleed background image — already composed with Lynn on right */}
+      <div className="absolute inset-0">
         <Image
           src="/images/lynn-hero.jpg"
           alt="Lynn Callaway"
           fill
           priority
           className="object-cover object-[center_top]"
-          sizes="(max-width: 768px) 100vw, 52vw"
+          sizes="100vw"
         />
-        {/* Mobile: gradient covers bottom so text stays readable */}
-        <div className="absolute inset-0 bg-gradient-to-t from-[#E7EFDA] from-[15%] via-[#E7EFDA]/60 via-[38%] to-transparent to-[55%] md:hidden" />
-        {/* Desktop: left-side blend */}
-        <div className="hidden md:block absolute inset-0 bg-gradient-to-r from-[#E7EFDA] via-[#E7EFDA]/20 to-transparent" style={{ width: "40%" }} />
+        {/* Mobile: fade bottom for text readability */}
+        <div className="absolute inset-0 bg-gradient-to-t from-[#E7EFDA] from-[20%] via-[#E7EFDA]/70 via-[45%] to-transparent to-[65%] md:hidden" />
+        {/* Desktop: subtle left fade so text sits cleanly */}
+        <div className="hidden md:block absolute inset-0 bg-gradient-to-r from-[#E7EFDA]/80 via-[#E7EFDA]/30 to-transparent" style={{ width: "55%" }} />
       </div>
 
       {/* Text */}
       <div className="relative z-10 w-full max-w-6xl mx-auto px-6 lg:px-12 flex flex-col justify-end md:justify-center min-h-[100svh]">
-        <div className="max-w-2xl pb-12 sm:pb-16 md:pt-24 md:pb-20">
+        <div className="max-w-xl pb-12 sm:pb-16 md:pt-24 md:pb-20">
           <h1
             className="fade-up text-[#3D3D3D] leading-[1.05] mb-8"
             style={{
