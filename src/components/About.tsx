@@ -2,13 +2,13 @@ import Image from "next/image";
 
 export default function About() {
   return (
-    <section id="about" className="py-24 md:py-36 bg-[#F9F7F4]">
+    <section id="about" className="py-16 md:py-28 lg:py-36 bg-[#F9F7F4]">
       <div className="max-w-6xl mx-auto px-6 lg:px-12">
-        <div className="grid md:grid-cols-2 gap-16 lg:gap-24 items-center">
+        <div className="grid md:grid-cols-2 gap-10 lg:gap-24 items-center">
 
-          {/* Photo */}
-          <div className="relative order-2 md:order-1">
-            <div className="relative aspect-[3/4] overflow-hidden">
+          {/* Photo — first in DOM = top on mobile, left on desktop */}
+          <div className="relative">
+            <div className="relative aspect-[4/5] sm:aspect-[3/4] overflow-hidden rounded-2xl">
               <Image
                 src="/images/bio-photo.jpg"
                 alt="Lynn Callaway"
@@ -17,27 +17,31 @@ export default function About() {
                 sizes="(max-width: 768px) 100vw, 50vw"
               />
             </div>
-            {/* Offset green border accent */}
+            {/* Offset accent — desktop only */}
             <div
-              className="absolute -bottom-4 -left-4 w-full h-full border-2 border-[#2C5F4A] -z-10"
+              className="hidden md:block absolute -bottom-4 -left-4 w-full h-full border-2 border-[#2C5F4A] rounded-2xl -z-10"
               aria-hidden
             />
           </div>
 
           {/* Bio text */}
-          <div className="order-1 md:order-2">
+          <div>
             <span className="block text-[#2C5F4A] text-xs tracking-[0.2em] uppercase mb-4 font-medium">
               About Lynn
             </span>
             <h2
-              className="text-4xl md:text-5xl text-[#1A1A1A] mb-6 leading-tight"
-              style={{ fontFamily: "var(--font-raleway)", fontWeight: 800 }}
+              className="text-[#1A1A1A] mb-6 leading-tight"
+              style={{
+                fontFamily: "var(--font-raleway)",
+                fontWeight: 800,
+                fontSize: "clamp(1.9rem, 4vw, 3.25rem)",
+              }}
             >
               15+ Years of Mission-Driven Marketing
             </h2>
-            <div style={{ width: 40, height: 2, background: "#B8963E", marginBottom: "1.75rem" }} />
+            <div style={{ width: 40, height: 2, background: "#B8963E", marginBottom: "1.5rem" }} />
 
-            <div className="space-y-5 text-[#4A4A4A] text-base leading-relaxed">
+            <div className="space-y-4 text-[#4A4A4A] text-sm sm:text-base leading-relaxed">
               <p>
                 I&apos;m a marketing and partnerships professional with 15+ years spanning grassroots organizing,
                 tech, social enterprise, and the public sector. I got my start building community spaces and
@@ -58,16 +62,16 @@ export default function About() {
               </p>
             </div>
 
-            <div className="mt-10 flex flex-col sm:flex-row gap-4">
+            <div className="mt-8 flex flex-row flex-wrap gap-3">
               <a
                 href="#contact"
-                className="text-xs tracking-widest uppercase bg-[#2C5F4A] text-white px-7 py-4 hover:bg-[#3D7A60] transition-colors text-center rounded-lg"
+                className="text-xs tracking-widest uppercase bg-[#2C5F4A] text-white px-6 py-3.5 hover:bg-[#3D7A60] transition-colors text-center rounded-lg whitespace-nowrap"
               >
                 Work With Me
               </a>
               <a
                 href="#work"
-                className="text-xs tracking-widest uppercase border border-[#2C5F4A] text-[#2C5F4A] px-7 py-4 hover:bg-[#2C5F4A] hover:text-white transition-colors text-center rounded-lg"
+                className="text-xs tracking-widest uppercase border border-[#2C5F4A] text-[#2C5F4A] px-6 py-3.5 hover:bg-[#2C5F4A] hover:text-white transition-colors text-center rounded-lg whitespace-nowrap"
               >
                 See Projects
               </a>
@@ -77,21 +81,21 @@ export default function About() {
         </div>
 
         {/* Stats row */}
-        <div className="mt-24 grid grid-cols-2 md:grid-cols-4 gap-8 pt-16 border-t border-[#E5E2DC]">
+        <div className="mt-16 md:mt-24 grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 pt-12 md:pt-16 border-t border-[#E5E2DC]">
           {[
             { number: "15+", label: "Years of Experience" },
             { number: "35K+", label: "Households Reached" },
             { number: "1,700", label: "AmeriCorps Hours" },
-            { number: "Magna\nCum Laude", label: "FIT Graduate" },
+            { number: "Magna Cum Laude", label: "FIT Graduate" },
           ].map((stat) => (
             <div key={stat.label} className="text-center md:text-left">
               <div
-                className="text-3xl md:text-4xl text-[#2C5F4A] mb-2 whitespace-pre-line leading-tight"
-                style={{ fontFamily: "var(--font-raleway)" }}
+                className="text-2xl md:text-4xl text-[#2C5F4A] mb-2 leading-tight"
+                style={{ fontFamily: "var(--font-raleway)", fontWeight: 700 }}
               >
                 {stat.number}
               </div>
-              <div className="text-xs tracking-widest uppercase text-[#6B6B6B]">{stat.label}</div>
+              <div className="text-[10px] md:text-xs tracking-widest uppercase text-[#6B6B6B]">{stat.label}</div>
             </div>
           ))}
         </div>

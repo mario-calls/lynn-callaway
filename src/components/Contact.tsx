@@ -1,7 +1,6 @@
 export default function Contact() {
   return (
-    <section id="contact" className="py-24 md:py-36 bg-[#2C5F4A] relative overflow-hidden">
-      {/* Subtle texture */}
+    <section id="contact" className="py-16 md:py-28 lg:py-36 bg-[#2C5F4A] relative overflow-hidden">
       <div
         className="absolute inset-0 opacity-[0.04]"
         style={{
@@ -12,20 +11,24 @@ export default function Contact() {
       />
 
       <div className="relative max-w-4xl mx-auto px-6 lg:px-12 text-center">
-        <span className="block text-[#B8963E] text-xs tracking-[0.2em] uppercase mb-6 font-medium">
+        <span className="block text-[#B8963E] text-xs tracking-[0.2em] uppercase mb-5 font-medium">
           Let&apos;s Work Together
         </span>
         <h2
-          className="text-4xl md:text-6xl text-white mb-6 leading-tight"
-          style={{ fontFamily: "var(--font-raleway)", fontWeight: 800 }}
+          className="text-white mb-5 leading-tight"
+          style={{
+            fontFamily: "var(--font-raleway)",
+            fontWeight: 800,
+            fontSize: "clamp(2rem, 5vw, 3.75rem)",
+          }}
         >
           Ready to grow your brand?
         </h2>
         <div
-          style={{ width: 40, height: 2, background: "#B8963E", margin: "0 auto 2rem" }}
+          style={{ width: 40, height: 2, background: "#B8963E", margin: "0 auto 1.75rem" }}
           aria-hidden
         />
-        <p className="text-white/75 text-lg mb-12 max-w-2xl mx-auto leading-relaxed">
+        <p className="text-white/75 text-base md:text-lg mb-10 max-w-2xl mx-auto leading-relaxed">
           Whether you&apos;re launching something new or scaling what you&apos;ve already built,
           I partner with brands whose missions I believe in. Let&apos;s see if we&apos;re a fit.
         </p>
@@ -33,14 +36,13 @@ export default function Contact() {
         <div className="flex justify-center">
           <a
             href="mailto:hello@lynncallaway.co"
-            className="text-xs tracking-widest uppercase bg-white text-[#2C5F4A] px-8 py-4 hover:bg-[#B8963E] hover:text-white transition-colors font-medium rounded-lg"
+            className="text-[10px] sm:text-xs tracking-widest uppercase bg-white text-[#2C5F4A] px-6 sm:px-8 py-4 hover:bg-[#B8963E] hover:text-white transition-colors font-medium rounded-lg"
           >
             hello@lynncallaway.co
           </a>
         </div>
 
-        {/* Services quick list */}
-        <div className="mt-20 pt-16 border-t border-white/20 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+        <div className="mt-16 md:mt-20 pt-12 md:pt-16 border-t border-white/20 grid grid-cols-2 md:grid-cols-4 gap-5 md:gap-6 text-center">
           {[
             "Brand Strategy",
             "Content Marketing",
@@ -48,8 +50,8 @@ export default function Contact() {
             "Community Marketing",
           ].map((service) => (
             <div key={service}>
-              <div className="text-[#B8963E] text-2xl mb-2" aria-hidden>✦</div>
-              <div className="text-white/80 text-xs tracking-widest uppercase">{service}</div>
+              <div className="text-[#B8963E] text-xl mb-2" aria-hidden>✦</div>
+              <div className="text-white/80 text-[10px] md:text-xs tracking-widest uppercase">{service}</div>
             </div>
           ))}
         </div>

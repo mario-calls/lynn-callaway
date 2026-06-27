@@ -48,30 +48,34 @@ export default function Work() {
   const rest = projects.filter((p) => !p.featured);
 
   return (
-    <section id="work" className="py-24 md:py-36 bg-white">
+    <section id="work" className="py-16 md:py-28 lg:py-36 bg-white">
       <div className="max-w-6xl mx-auto px-6 lg:px-12">
 
         {/* Section header */}
-        <div className="flex flex-col md:flex-row md:items-end md:justify-between mb-16 gap-6">
+        <div className="flex flex-col md:flex-row md:items-end md:justify-between mb-10 md:mb-16 gap-4">
           <div>
-            <span className="block text-[#2C5F4A] text-xs tracking-[0.2em] uppercase mb-4 font-medium">
+            <span className="block text-[#2C5F4A] text-xs tracking-[0.2em] uppercase mb-3 font-medium">
               Selected Work
             </span>
             <h2
-              className="text-4xl md:text-5xl text-[#1A1A1A] leading-tight"
-              style={{ fontFamily: "var(--font-raleway)", fontWeight: 800 }}
+              className="text-[#1A1A1A] leading-tight"
+              style={{
+                fontFamily: "var(--font-raleway)",
+                fontWeight: 800,
+                fontSize: "clamp(1.9rem, 4vw, 3.25rem)",
+              }}
             >
               Brands I&apos;ve Built &amp; Grown
             </h2>
           </div>
-          <p className="text-[#6B6B6B] max-w-xs text-sm leading-relaxed">
+          <p className="text-[#6B6B6B] md:max-w-xs text-sm leading-relaxed">
             From startup to enterprise, turning good values into measurable brand growth.
           </p>
         </div>
 
-        {/* Featured project: good dirt with video */}
+        {/* Featured project: good dirt */}
         {featured && (
-          <div className="mb-12 border border-[#E5E2DC] overflow-hidden group hover:-translate-y-1 transition-transform duration-300 bg-[#F9F7F4] rounded-2xl">
+          <div className="mb-8 md:mb-12 border border-[#E5E2DC] overflow-hidden group hover:-translate-y-1 transition-transform duration-300 bg-[#F9F7F4] rounded-2xl">
             <div className="grid md:grid-cols-2">
               {/* Video */}
               <div className="relative aspect-video md:aspect-auto md:min-h-[420px] overflow-hidden bg-[#2C5F4A]">
@@ -86,7 +90,7 @@ export default function Work() {
                 <div className="absolute inset-0 bg-[#2C5F4A]/20" />
               </div>
               {/* Text */}
-              <div className="p-8 md:p-12 flex flex-col justify-center">
+              <div className="p-6 md:p-10 lg:p-12 flex flex-col justify-center">
                 <span className="text-xs tracking-[0.2em] uppercase text-[#B8963E] font-medium mb-3">
                   {featured.label}
                 </span>
@@ -94,13 +98,13 @@ export default function Work() {
                   <Image
                     src="/images/good-dirt-logo.jpg"
                     alt="good dirt®"
-                    width={220}
-                    height={80}
+                    width={200}
+                    height={72}
                     className="object-contain"
                   />
                 </div>
                 <div style={{ width: 32, height: 2, background: "#B8963E", marginBottom: "1.25rem" }} />
-                <p className="text-[#4A4A4A] text-sm leading-relaxed mb-8">
+                <p className="text-[#4A4A4A] text-sm leading-relaxed mb-6">
                   {featured.description}
                 </p>
                 <div className="flex flex-wrap gap-2">
@@ -118,16 +122,15 @@ export default function Work() {
           </div>
         )}
 
-        {/* Other projects grid */}
-        <div className="grid md:grid-cols-3 gap-6">
+        {/* Other projects — 1 col phone, 2 col tablet, 3 col desktop */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-6">
           {rest.map((project) => (
             <div
               key={project.id}
               className="border border-[#E5E2DC] overflow-hidden group hover:-translate-y-1 transition-transform duration-300 bg-[#F9F7F4] rounded-2xl"
             >
-              {/* Placeholder colored header */}
               <div
-                className="h-40 flex items-center justify-center"
+                className="h-36 md:h-40 flex items-center justify-center"
                 style={{
                   background:
                     project.id === "amazon"
@@ -138,19 +141,19 @@ export default function Work() {
                 }}
               >
                 <span
-                  className="text-white text-2xl font-bold tracking-tight"
+                  className="text-white text-xl md:text-2xl font-bold tracking-tight"
                   style={{ fontFamily: "var(--font-raleway)" }}
                 >
                   {project.title}
                 </span>
               </div>
-              <div className="p-6">
+              <div className="p-5 md:p-6">
                 <span className="text-[10px] tracking-[0.2em] uppercase text-[#B8963E] font-medium mb-2 block">
                   {project.label}
                 </span>
                 <h3
-                  className="text-xl text-[#1A1A1A] mb-3"
-                  style={{ fontFamily: "var(--font-raleway)" }}
+                  className="text-lg md:text-xl text-[#1A1A1A] mb-2"
+                  style={{ fontFamily: "var(--font-raleway)", fontWeight: 700 }}
                 >
                   {project.title}
                 </h3>
