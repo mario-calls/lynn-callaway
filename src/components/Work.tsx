@@ -13,14 +13,15 @@ const projects = [
     featured: true,
   },
   {
-    id: "amazon",
+    id: "ollie-and-otto",
     type: "image",
-    label: "Advertising Operations",
-    title: "Amazon",
-    logo: "/images/logos/amazon-logo.webp",
+    label: "Founder",
+    title: "Ollie & Otto",
+    logo: "/images/ollie-and-otto.png",
+    coverLogo: true,
     description:
-      "Managed advertising operations and campaign performance across Amazon's digital ad platform, optimizing spend and improving measurable outcomes at scale.",
-    tags: ["Digital Advertising", "Campaign Ops", "Analytics"],
+      "I founded Ollie & Otto, a social impact skincare company creating non-toxic personal care items for the entire family. For every product sold, the brand provided water to an individual in need, with contributions funding water wells in countries like Haiti and West Africa. It was a powerful example of how purpose and product can work together to create tangible, global impact.",
+    tags: ["Social Impact", "CPG", "Founder", "Sustainability"],
     featured: false,
   },
   {
