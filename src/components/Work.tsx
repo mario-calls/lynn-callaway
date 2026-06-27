@@ -90,12 +90,15 @@ export default function Work() {
                 <span className="text-xs tracking-[0.2em] uppercase text-[#B8963E] font-medium mb-3">
                   {featured.label}
                 </span>
-                <h3
-                  className="text-3xl md:text-4xl text-[#1A1A1A] mb-4 leading-tight"
-                  style={{ fontFamily: "var(--font-raleway)" }}
-                >
-                  {featured.title}
-                </h3>
+                <div className="mb-4">
+                  <Image
+                    src="/images/good-dirt-logo.jpg"
+                    alt="good dirt®"
+                    width={220}
+                    height={80}
+                    className="object-contain"
+                  />
+                </div>
                 <div style={{ width: 32, height: 2, background: "#B8963E", marginBottom: "1.25rem" }} />
                 <p className="text-[#4A4A4A] text-sm leading-relaxed mb-8">
                   {featured.description}
