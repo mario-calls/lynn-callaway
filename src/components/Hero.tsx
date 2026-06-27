@@ -9,15 +9,15 @@ export default function Hero() {
           alt="Lynn Callaway"
           fill
           priority
-          className="object-cover object-[95%_top] md:object-[center_top]"
+          className="object-cover object-[right_top] md:object-[center_top]"
           sizes="100vw"
         />
       </div>
 
       <div className="relative z-10 w-full max-w-6xl mx-auto px-6 lg:px-12 flex flex-col justify-start md:justify-center min-h-[100svh]">
-        <div className="w-[38%] md:w-auto md:max-w-xl pt-28 md:pt-24 pb-12">
+        <div className="w-[33%] md:w-auto md:max-w-xl pt-28 md:pt-24 pb-12">
           <h1
-            className="fade-up text-[#555555] leading-[1.05] mb-8 text-[1.35rem] md:text-[clamp(2rem,5.5vw,4.5rem)]"
+            className="fade-up text-[#555555] leading-[1.05] mb-8 text-[1.1rem] md:text-[clamp(2rem,5.5vw,4.5rem)]"
             style={{
               fontFamily: "var(--font-raleway)",
               fontWeight: 800,
