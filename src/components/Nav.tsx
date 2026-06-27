@@ -5,36 +5,19 @@ import Link from "next/link";
 
 export default function Nav() {
   const [visible, setVisible] = useState(true);
-  const [atTop, setAtTop] = useState(true);
-  const [scrolledBack, setScrolledBack] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const lastY = useRef(0);
-  const wasHidden = useRef(false);
 
   useEffect(() => {
     const onScroll = () => {
       const y = window.scrollY;
-      const isAtTop = y < 40;
-
-      setAtTop(isAtTop);
-
-      if (isAtTop) {
+      if (y < 40) {
         setVisible(true);
-        setScrolledBack(false);
-        wasHidden.current = false;
       } else if (y > lastY.current + 8) {
-        // Scrolling down — hide but keep transparent, no color change
         setVisible(false);
-        wasHidden.current = true;
       } else if (y < lastY.current - 8) {
-        // Scrolling back up — only show solid bg when re-emerging from hidden state
         setVisible(true);
-        if (wasHidden.current) {
-          setScrolledBack(true);
-          wasHidden.current = false;
-        }
       }
-
       lastY.current = y;
     };
 
@@ -48,24 +31,16 @@ export default function Nav() {
     { label: "Contact", href: "#contact" },
   ];
 
-  // Solid bg only when scrolled back up mid-page — never during initial downward scroll
-  const showSolid = scrolledBack && !atTop;
-  const textColor = showSolid ? "text-[#1A1A1A]" : "text-white";
-  const hoverColor = showSolid ? "hover:text-[#2C5F4A]" : "hover:text-white/70";
-  const underlineColor = showSolid ? "bg-[#2C5F4A]" : "bg-white";
-
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-transparent ${
         visible ? "translate-y-0" : "-translate-y-full"
-      } ${
-        showSolid ? "bg-[#F9F7F4]/96 backdrop-blur-sm shadow-sm" : "bg-transparent"
       }`}
     >
       <div className="max-w-6xl mx-auto px-6 lg:px-12 flex items-center justify-between py-6">
         <Link
           href="/"
-          className={`text-2xl tracking-wide transition-colors ${textColor} ${hoverColor}`}
+          className="text-2xl tracking-wide transition-colors text-white hover:text-white/70"
           style={{ fontFamily: "var(--font-raleway)", fontWeight: 800 }}
         >
           Lynn Callaway
@@ -77,19 +52,15 @@ export default function Nav() {
             <a
               key={l.label}
               href={l.href}
-              className={`text-xs tracking-widest uppercase transition-colors relative group ${textColor} ${hoverColor}`}
+              className="text-xs tracking-widest uppercase transition-colors relative group text-white hover:text-white/70"
             >
               {l.label}
-              <span className={`absolute -bottom-0.5 left-0 w-0 h-px ${underlineColor} group-hover:w-full transition-all duration-300`} />
+              <span className="absolute -bottom-0.5 left-0 w-0 h-px bg-white group-hover:w-full transition-all duration-300" />
             </a>
           ))}
           <a
             href="#contact"
-            className={`text-xs tracking-widest uppercase px-5 py-2.5 rounded-lg transition-colors font-medium ${
-              showSolid
-                ? "bg-[#2C5F4A] text-white hover:bg-[#3D7A60]"
-                : "bg-white text-[#2C5F4A] hover:bg-white/80"
-            }`}
+            className="text-xs tracking-widest uppercase px-5 py-2.5 rounded-lg transition-colors font-medium bg-white text-[#2C5F4A] hover:bg-white/80"
           >
             Let&apos;s Talk
           </a>
@@ -101,9 +72,9 @@ export default function Nav() {
           onClick={() => setMenuOpen(!menuOpen)}
           aria-label="Toggle menu"
         >
-          <span className={`block w-6 h-px transition-all duration-300 ${showSolid ? "bg-[#1A1A1A]" : "bg-white"} ${menuOpen ? "rotate-45 translate-y-2" : ""}`} />
-          <span className={`block w-6 h-px transition-all duration-300 ${showSolid ? "bg-[#1A1A1A]" : "bg-white"} ${menuOpen ? "opacity-0" : ""}`} />
-          <span className={`block w-6 h-px transition-all duration-300 ${showSolid ? "bg-[#1A1A1A]" : "bg-white"} ${menuOpen ? "-rotate-45 -translate-y-2" : ""}`} />
+          <span className={`block w-6 h-px bg-white transition-all duration-300 ${menuOpen ? "rotate-45 translate-y-2" : ""}`} />
+          <span className={`block w-6 h-px bg-white transition-all duration-300 ${menuOpen ? "opacity-0" : ""}`} />
+          <span className={`block w-6 h-px bg-white transition-all duration-300 ${menuOpen ? "-rotate-45 -translate-y-2" : ""}`} />
         </button>
       </div>
 
