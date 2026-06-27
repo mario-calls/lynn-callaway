@@ -7,7 +7,7 @@ const FORM_ENDPOINT = "https://api.web3forms.com/submit";
 type Status = "idle" | "submitting" | "success" | "error";
 
 const inputClass =
-  "w-full border border-[#E5E2DC] rounded-lg px-4 py-3 text-sm text-[#555555] bg-white focus:outline-none focus:border-[#2C5F4A] focus:ring-1 focus:ring-[#2C5F4A] transition-colors placeholder:text-[#ABABAB]";
+  "w-full border border-[#E5E2DC] rounded-lg px-4 py-3 text-sm text-[#555555] bg-white focus:outline-none focus:border-[#532D3A] focus:ring-1 focus:ring-[#532D3A] transition-colors placeholder:text-[#ABABAB]";
 
 export default function Press() {
   const [status, setStatus] = useState<Status>("idle");
@@ -33,13 +33,13 @@ export default function Press() {
   };
 
   return (
-    <section id="press" className="py-16 md:py-28 lg:py-36 bg-[#F9F7F4]">
+    <section id="inquiries" className="py-16 md:py-28 lg:py-36 bg-[#F9F7F4]">
       <div className="max-w-4xl mx-auto px-6 lg:px-12">
 
         <Reveal direction="up">
           <div className="text-center mb-12 md:mb-16">
             <span className="block text-[#B8963E] text-xs tracking-[0.2em] uppercase mb-4 font-medium">
-              Press
+              Media &amp; Speaking
             </span>
             <h2
               className="text-[#555555] leading-tight mb-5"
@@ -63,7 +63,7 @@ export default function Press() {
             <div className="text-center py-16 px-8 bg-white rounded-2xl border border-[#E5E2DC]">
               <div className="text-4xl mb-4">✦</div>
               <h3
-                className="text-[#2C5F4A] text-xl mb-3"
+                className="text-[#532D3A] text-xl mb-3"
                 style={{ fontFamily: "var(--font-raleway)", fontWeight: 700 }}
               >
                 Message Received
@@ -80,7 +80,7 @@ export default function Press() {
               className="bg-white rounded-2xl border border-[#E5E2DC] p-6 md:p-10 lg:p-12 space-y-5"
             >
               <input type="hidden" name="access_key" value="e3be8008-dca9-4ef0-90db-a11e0a1e4b0c" />
-              <input type="hidden" name="subject" value="New Press Inquiry — lynncallaway.co" />
+              <input type="hidden" name="subject" value="New Inquiry — lynncallaway.co" />
               <input type="hidden" name="from_name" value="Lynn Callaway Website" />
 
               {/* Name row */}
