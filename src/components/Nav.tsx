@@ -6,34 +6,24 @@ import Link from "next/link";
 export default function Nav() {
   const [visible, setVisible] = useState(true);
   const [menuOpen, setMenuOpen] = useState(false);
-  const lastY = useRef(0);
   const lastViewportH = useRef(0);
 
   useEffect(() => {
-    lastY.current = window.scrollY;
     lastViewportH.current = window.innerHeight;
 
     const onScroll = () => {
       const y = window.scrollY;
       const vh = window.innerHeight;
 
-      // iOS Safari fires scroll when URL bar appears/disappears (viewport height changes).
-      // Ignore those events — only react to real user scrolling.
+      // Ignore iOS Safari URL-bar show/hide events (viewport height change)
       if (vh !== lastViewportH.current) {
         lastViewportH.current = vh;
         lastY.current = y;
         return;
       }
 
-      if (y < 60) {
-        setVisible(true);
-      } else if (y > lastY.current + 10) {
-        setVisible(false);
-      } else if (y < lastY.current - 10) {
-        setVisible(true);
-      }
-
-      lastY.current = y;
+      // Show only at the very top; hide as soon as user scrolls away
+      setVisible(y < 60);
     };
 
     window.addEventListener("scroll", onScroll, { passive: true });
