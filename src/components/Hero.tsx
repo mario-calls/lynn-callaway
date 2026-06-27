@@ -9,7 +9,7 @@ export default function Hero() {
           alt="Lynn Callaway"
           fill
           priority
-          className="object-cover object-[84%_top] md:object-[center_top]"
+          className="object-cover object-[88%_top] md:object-[center_top]"
           sizes="100vw"
         />
       </div>
@@ -25,16 +25,16 @@ export default function Hero() {
           >
             Organizer. Founder. Strategist. Helping brands built to do good.
           </h1>
-          <div className="fade-up delay-2 flex flex-col md:flex-row gap-2 md:gap-3 items-start">
+          <div className="fade-up delay-2 flex flex-col md:flex-row gap-2 md:gap-3">
             <a
               href="#about"
-              className="text-[9px] md:text-xs tracking-widest uppercase bg-[#2C5F4A] text-white px-3 md:px-6 py-2 md:py-3.5 hover:bg-[#B8963E] transition-colors font-semibold rounded-lg whitespace-nowrap"
+              className="text-[9px] md:text-xs tracking-widest uppercase bg-[#2C5F4A] text-white px-3 md:px-6 py-2 md:py-3.5 hover:bg-[#B8963E] transition-colors font-semibold rounded-lg text-center"
             >
               Learn More
             </a>
             <a
               href="#contact"
-              className="text-[9px] md:text-xs tracking-widest uppercase border border-[#2C5F4A] text-[#2C5F4A] px-3 md:px-6 py-2 md:py-3.5 hover:bg-[#2C5F4A] hover:text-white transition-colors rounded-lg whitespace-nowrap"
+              className="text-[9px] md:text-xs tracking-widest uppercase border border-[#2C5F4A] text-[#2C5F4A] px-3 md:px-6 py-2 md:py-3.5 hover:bg-[#2C5F4A] hover:text-white transition-colors rounded-lg text-center"
             >
               Get In Touch
             </a>
