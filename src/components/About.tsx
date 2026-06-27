@@ -103,7 +103,7 @@ export default function About() {
             <Reveal key={stat.label} direction="up" delay={i * 80}>
               <div className="text-center md:text-left">
                 <div
-                  className="text-2xl md:text-4xl text-[#2C5F4A] mb-2 leading-tight"
+                  className="text-2xl md:text-4xl text-[#532D3A] mb-2 leading-tight"
                   style={{ fontFamily: "var(--font-raleway)", fontWeight: 700 }}
                 >
                   {stat.number}
