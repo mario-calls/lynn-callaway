@@ -15,6 +15,22 @@ export const metadata: Metadata = {
   title: "Lynn Callaway | Marketing Strategist & Brand Consultant",
   description:
     "Lynn Callaway is an entrepreneur and marketing strategist who builds growth for social impact brands and community-rooted businesses.",
+  openGraph: {
+    title: "Lynn Callaway | Marketing Strategist & Brand Consultant",
+    description:
+      "Lynn Callaway is an entrepreneur and marketing strategist who builds growth for social impact brands and community-rooted businesses.",
+    url: "https://www.lynncallaway.co",
+    siteName: "Lynn Callaway",
+    images: [{ url: "https://www.lynncallaway.co/og-image.png", width: 1200, height: 630 }],
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Lynn Callaway | Marketing Strategist & Brand Consultant",
+    description:
+      "Lynn Callaway is an entrepreneur and marketing strategist who builds growth for social impact brands and community-rooted businesses.",
+    images: ["https://www.lynncallaway.co/og-image.png"],
+  },
 };
 
 export default function RootLayout({
