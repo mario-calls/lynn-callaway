@@ -31,7 +31,7 @@ export default function About() {
             </span>
             <h2
               className="text-4xl md:text-5xl text-[#1A1A1A] mb-6 leading-tight"
-              style={{ fontFamily: "var(--font-raleway)" }}
+              style={{ fontFamily: "var(--font-raleway)", fontWeight: 800 }}
             >
               15+ Years of Mission-Driven Marketing
             </h2>

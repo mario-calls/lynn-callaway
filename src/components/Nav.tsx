@@ -29,7 +29,7 @@ export default function Nav() {
         <Link
           href="/"
           className="font-display text-xl tracking-wide text-[#1A1A1A] hover:text-[#2C5F4A] transition-colors"
-          style={{ fontFamily: "var(--font-raleway)" }}
+          style={{ fontFamily: "var(--font-raleway)", fontWeight: 700 }}
         >
           Lynn Callaway
         </Link>

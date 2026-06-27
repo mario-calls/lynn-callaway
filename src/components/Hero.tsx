@@ -26,8 +26,8 @@ export default function Hero() {
             Marketing Strategist &amp; Brand Consultant
           </span>
           <h1
-            className="fade-up delay-2 text-white leading-tight mb-6"
-            style={{ fontFamily: "var(--font-raleway)", fontSize: "clamp(2.5rem, 5vw, 4rem)" }}
+            className="fade-up delay-2 text-white leading-tight mb-6 font-extrabold"
+            style={{ fontFamily: "var(--font-raleway)", fontSize: "clamp(2.75rem, 5.5vw, 4.5rem)", fontWeight: 800 }}
           >
             I help brands with good <em>ethos</em> do better.
           </h1>

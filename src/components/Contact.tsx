@@ -17,7 +17,7 @@ export default function Contact() {
         </span>
         <h2
           className="text-4xl md:text-6xl text-white mb-6 leading-tight"
-          style={{ fontFamily: "var(--font-raleway)" }}
+          style={{ fontFamily: "var(--font-raleway)", fontWeight: 800 }}
         >
           Ready to grow your brand?
         </h2>

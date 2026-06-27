@@ -59,7 +59,7 @@ export default function Work() {
             </span>
             <h2
               className="text-4xl md:text-5xl text-[#1A1A1A] leading-tight"
-              style={{ fontFamily: "var(--font-raleway)" }}
+              style={{ fontFamily: "var(--font-raleway)", fontWeight: 800 }}
             >
               Brands I&apos;ve Built &amp; Grown
             </h2>
